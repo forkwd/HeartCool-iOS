@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ADA32CD1E68576000CADC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CC1E68576000CADC03 /* main.m */; };
+		5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CF1E68576000CADC03 /* AppDelegate.m */; };
+		5ADA32D31E68576000CADC03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32D21E68576000CADC03 /* ViewController.m */; };
+		5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D41E68576000CADC03 /* Main.storyboard */; };
+		5ADA32D81E68576000CADC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D71E68576000CADC03 /* Assets.xcassets */; };
+		5ADA32DB1E68576000CADC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */; };
+		5ADA32E61E68576000CADC03 /* HeartCoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32E51E68576000CADC03 /* HeartCoolTests.m */; };
+		5ADA32F11E68576000CADC03 /* HeartCoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ADA32E21E68576000CADC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ADA32C01E68575F00CADC03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ADA32C71E68575F00CADC03;
+			remoteInfo = HeartCool;
+		};
+		5ADA32ED1E68576000CADC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ADA32C01E68575F00CADC03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ADA32C71E68575F00CADC03;
+			remoteInfo = HeartCool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5ADA32C81E68575F00CADC03 /* HeartCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADA32CC1E68576000CADC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5ADA32CE1E68576000CADC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5ADA32CF1E68576000CADC03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5ADA32D11E68576000CADC03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5ADA32D21E68576000CADC03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5ADA32D51E68576000CADC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5ADA32D71E68576000CADC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ADA32DA1E68576000CADC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5ADA32DC1E68576000CADC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ADA32E11E68576000CADC03 /* HeartCoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartCoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADA32E51E68576000CADC03 /* HeartCoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartCoolTests.m; sourceTree = "<group>"; };
+		5ADA32E71E68576000CADC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ADA32EC1E68576000CADC03 /* HeartCoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartCoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartCoolUITests.m; sourceTree = "<group>"; };
+		5ADA32F21E68576000CADC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ADA32C51E68575F00CADC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADA32DE1E68576000CADC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADA32E91E68576000CADC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ADA32BF1E68575F00CADC03 = {
+			isa = PBXGroup;
+			children = (
+				5ADA32CA1E68575F00CADC03 /* HeartCool */,
+				5ADA32E41E68576000CADC03 /* HeartCoolTests */,
+				5ADA32EF1E68576000CADC03 /* HeartCoolUITests */,
+				5ADA32C91E68575F00CADC03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ADA32C91E68575F00CADC03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA32C81E68575F00CADC03 /* HeartCool.app */,
+				5ADA32E11E68576000CADC03 /* HeartCoolTests.xctest */,
+				5ADA32EC1E68576000CADC03 /* HeartCoolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ADA32CA1E68575F00CADC03 /* HeartCool */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA32CE1E68576000CADC03 /* AppDelegate.h */,
+				5ADA32CF1E68576000CADC03 /* AppDelegate.m */,
+				5ADA32D11E68576000CADC03 /* ViewController.h */,
+				5ADA32D21E68576000CADC03 /* ViewController.m */,
+				5ADA32D41E68576000CADC03 /* Main.storyboard */,
+				5ADA32D71E68576000CADC03 /* Assets.xcassets */,
+				5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */,
+				5ADA32DC1E68576000CADC03 /* Info.plist */,
+				5ADA32CB1E68575F00CADC03 /* Supporting Files */,
+			);
+			path = HeartCool;
+			sourceTree = "<group>";
+		};
+		5ADA32CB1E68575F00CADC03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA32CC1E68576000CADC03 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ADA32E41E68576000CADC03 /* HeartCoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA32E51E68576000CADC03 /* HeartCoolTests.m */,
+				5ADA32E71E68576000CADC03 /* Info.plist */,
+			);
+			path = HeartCoolTests;
+			sourceTree = "<group>";
+		};
+		5ADA32EF1E68576000CADC03 /* HeartCoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */,
+				5ADA32F21E68576000CADC03 /* Info.plist */,
+			);
+			path = HeartCoolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ADA32C71E68575F00CADC03 /* HeartCool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADA32F51E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCool" */;
+			buildPhases = (
+				5ADA32C41E68575F00CADC03 /* Sources */,
+				5ADA32C51E68575F00CADC03 /* Frameworks */,
+				5ADA32C61E68575F00CADC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartCool;
+			productName = HeartCool;
+			productReference = 5ADA32C81E68575F00CADC03 /* HeartCool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ADA32E01E68576000CADC03 /* HeartCoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADA32F81E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCoolTests" */;
+			buildPhases = (
+				5ADA32DD1E68576000CADC03 /* Sources */,
+				5ADA32DE1E68576000CADC03 /* Frameworks */,
+				5ADA32DF1E68576000CADC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ADA32E31E68576000CADC03 /* PBXTargetDependency */,
+			);
+			name = HeartCoolTests;
+			productName = HeartCoolTests;
+			productReference = 5ADA32E11E68576000CADC03 /* HeartCoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5ADA32EB1E68576000CADC03 /* HeartCoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADA32FB1E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCoolUITests" */;
+			buildPhases = (
+				5ADA32E81E68576000CADC03 /* Sources */,
+				5ADA32E91E68576000CADC03 /* Frameworks */,
+				5ADA32EA1E68576000CADC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ADA32EE1E68576000CADC03 /* PBXTargetDependency */,
+			);
+			name = HeartCoolUITests;
+			productName = HeartCoolUITests;
+			productReference = 5ADA32EC1E68576000CADC03 /* HeartCoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ADA32C01E68575F00CADC03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = uteamtec;
+				TargetAttributes = {
+					5ADA32C71E68575F00CADC03 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PN9P4WYKNB;
+						ProvisioningStyle = Automatic;
+					};
+					5ADA32E01E68576000CADC03 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PN9P4WYKNB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5ADA32C71E68575F00CADC03;
+					};
+					5ADA32EB1E68576000CADC03 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PN9P4WYKNB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5ADA32C71E68575F00CADC03;
+					};
+				};
+			};
+			buildConfigurationList = 5ADA32C31E68575F00CADC03 /* Build configuration list for PBXProject "HeartCool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ADA32BF1E68575F00CADC03;
+			productRefGroup = 5ADA32C91E68575F00CADC03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ADA32C71E68575F00CADC03 /* HeartCool */,
+				5ADA32E01E68576000CADC03 /* HeartCoolTests */,
+				5ADA32EB1E68576000CADC03 /* HeartCoolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ADA32C61E68575F00CADC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADA32DB1E68576000CADC03 /* LaunchScreen.storyboard in Resources */,
+				5ADA32D81E68576000CADC03 /* Assets.xcassets in Resources */,
+				5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADA32DF1E68576000CADC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADA32EA1E68576000CADC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ADA32C41E68575F00CADC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADA32D31E68576000CADC03 /* ViewController.m in Sources */,
+				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
+				5ADA32CD1E68576000CADC03 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADA32DD1E68576000CADC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADA32E61E68576000CADC03 /* HeartCoolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADA32E81E68576000CADC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADA32F11E68576000CADC03 /* HeartCoolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ADA32E31E68576000CADC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ADA32C71E68575F00CADC03 /* HeartCool */;
+			targetProxy = 5ADA32E21E68576000CADC03 /* PBXContainerItemProxy */;
+		};
+		5ADA32EE1E68576000CADC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ADA32C71E68575F00CADC03 /* HeartCool */;
+			targetProxy = 5ADA32ED1E68576000CADC03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5ADA32D41E68576000CADC03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ADA32D51E68576000CADC03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ADA32DA1E68576000CADC03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ADA32F31E68576000CADC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5ADA32F41E68576000CADC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ADA32F61E68576000CADC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				INFOPLIST_FILE = HeartCool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5ADA32F71E68576000CADC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				INFOPLIST_FILE = HeartCool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5ADA32F91E68576000CADC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				INFOPLIST_FILE = HeartCoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartCool.app/HeartCool";
+			};
+			name = Debug;
+		};
+		5ADA32FA1E68576000CADC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				INFOPLIST_FILE = HeartCoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartCool.app/HeartCool";
+			};
+			name = Release;
+		};
+		5ADA32FC1E68576000CADC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				INFOPLIST_FILE = HeartCoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HeartCool;
+			};
+			name = Debug;
+		};
+		5ADA32FD1E68576000CADC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				INFOPLIST_FILE = HeartCoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HeartCool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ADA32C31E68575F00CADC03 /* Build configuration list for PBXProject "HeartCool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADA32F31E68576000CADC03 /* Debug */,
+				5ADA32F41E68576000CADC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ADA32F51E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADA32F61E68576000CADC03 /* Debug */,
+				5ADA32F71E68576000CADC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5ADA32F81E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADA32F91E68576000CADC03 /* Debug */,
+				5ADA32FA1E68576000CADC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5ADA32FB1E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADA32FC1E68576000CADC03 /* Debug */,
+				5ADA32FD1E68576000CADC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ADA32C01E68575F00CADC03 /* Project object */;
+}
