@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		5ADA32CD1E68576000CADC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CC1E68576000CADC03 /* main.m */; };
 		5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CF1E68576000CADC03 /* AppDelegate.m */; };
-		5ADA32D31E68576000CADC03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32D21E68576000CADC03 /* ViewController.m */; };
 		5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D41E68576000CADC03 /* Main.storyboard */; };
 		5ADA32D81E68576000CADC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D71E68576000CADC03 /* Assets.xcassets */; };
 		5ADA32DB1E68576000CADC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */; };
 		5ADA32E61E68576000CADC03 /* HeartCoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32E51E68576000CADC03 /* HeartCoolTests.m */; };
 		5ADA32F11E68576000CADC03 /* HeartCoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */; };
+		5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA33271E68611100CADC03 /* LoginViewController.m */; };
+		5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA332A1E68612500CADC03 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		5ADA32CC1E68576000CADC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ADA32CE1E68576000CADC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5ADA32CF1E68576000CADC03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5ADA32D11E68576000CADC03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5ADA32D21E68576000CADC03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5ADA32D51E68576000CADC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5ADA32D71E68576000CADC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ADA32DA1E68576000CADC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		5ADA32EC1E68576000CADC03 /* HeartCoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartCoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartCoolUITests.m; sourceTree = "<group>"; };
 		5ADA32F21E68576000CADC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ADA33261E68611100CADC03 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5ADA33271E68611100CADC03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5ADA33291E68612500CADC03 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		5ADA332A1E68612500CADC03 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +106,8 @@
 			children = (
 				5ADA32CE1E68576000CADC03 /* AppDelegate.h */,
 				5ADA32CF1E68576000CADC03 /* AppDelegate.m */,
-				5ADA32D11E68576000CADC03 /* ViewController.h */,
-				5ADA32D21E68576000CADC03 /* ViewController.m */,
 				5ADA32D41E68576000CADC03 /* Main.storyboard */,
+				5ADA332C1E68612900CADC03 /* ViewControllers */,
 				5ADA32D71E68576000CADC03 /* Assets.xcassets */,
 				5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */,
 				5ADA32DC1E68576000CADC03 /* Info.plist */,
@@ -138,6 +140,17 @@
 				5ADA32F21E68576000CADC03 /* Info.plist */,
 			);
 			path = HeartCoolUITests;
+			sourceTree = "<group>";
+		};
+		5ADA332C1E68612900CADC03 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA33261E68611100CADC03 /* LoginViewController.h */,
+				5ADA33271E68611100CADC03 /* LoginViewController.m */,
+				5ADA33291E68612500CADC03 /* RegisterViewController.h */,
+				5ADA332A1E68612500CADC03 /* RegisterViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ADA32D31E68576000CADC03 /* ViewController.m in Sources */,
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
 				5ADA32CD1E68576000CADC03 /* main.m in Sources */,
+				5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */,
+				5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +528,7 @@
 				5ADA32F71E68576000CADC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ADA32F81E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCoolTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +537,7 @@
 				5ADA32FA1E68576000CADC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ADA32FB1E68576000CADC03 /* Build configuration list for PBXNativeTarget "HeartCoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +546,7 @@
 				5ADA32FD1E68576000CADC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
