@@ -1,18 +1,18 @@
 //
-//  LoginViewController.m
+//  ForgotViewController.m
 //  HeartCool
 //
-//  Created by Windom on 2017/3/2.
+//  Created by Windom on 2017/3/11.
 //  Copyright © 2017年 uteamtec. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "ForgotViewController.h"
 
-@interface LoginViewController ()
+@interface ForgotViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation ForgotViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,17 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)onClickLogin:(id)sender {
-    [self performSegueWithIdentifier:@"push_devices" sender:self];
-}
-
-- (IBAction)onClickRegister:(id)sender {
-    [self performSegueWithIdentifier:@"push_register" sender:self];
-}
-
-- (IBAction)onClickForgot:(id)sender {
-    [self performSegueWithIdentifier:@"push_forgot" sender:self];
-}
 
 @end

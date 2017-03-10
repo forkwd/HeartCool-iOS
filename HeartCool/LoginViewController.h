@@ -10,4 +10,8 @@
 
 @interface LoginViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btn_login;
+@property (strong, nonatomic) IBOutlet UIButton *btn_register;
+@property (strong, nonatomic) IBOutlet UIButton *btn_forgot;
+
 @end

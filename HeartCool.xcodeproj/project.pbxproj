@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A52669F1E730E2B006F2E95 /* DevicesViewController.m */; };
+		5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A21E730E84006F2E95 /* RegisterNextViewController.m */; };
+		5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A51E730ED7006F2E95 /* MainViewController.m */; };
+		5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A81E731440006F2E95 /* WelcomeViewController.m */; };
+		5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266AB1E7316B8006F2E95 /* ForgotViewController.m */; };
+		5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266AE1E731716006F2E95 /* ForgotNextViewController.m */; };
 		5ADA32CD1E68576000CADC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CC1E68576000CADC03 /* main.m */; };
 		5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CF1E68576000CADC03 /* AppDelegate.m */; };
 		5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D41E68576000CADC03 /* Main.storyboard */; };
@@ -36,6 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A52669E1E730E2B006F2E95 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
+		5A52669F1E730E2B006F2E95 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
+		5A5266A11E730E84006F2E95 /* RegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterNextViewController.h; sourceTree = "<group>"; };
+		5A5266A21E730E84006F2E95 /* RegisterNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterNextViewController.m; sourceTree = "<group>"; };
+		5A5266A41E730ED7006F2E95 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5A5266A51E730ED7006F2E95 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5A5266A71E731440006F2E95 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		5A5266A81E731440006F2E95 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		5A5266AA1E7316B8006F2E95 /* ForgotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotViewController.h; sourceTree = "<group>"; };
+		5A5266AB1E7316B8006F2E95 /* ForgotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotViewController.m; sourceTree = "<group>"; };
+		5A5266AD1E731716006F2E95 /* ForgotNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotNextViewController.h; sourceTree = "<group>"; };
+		5A5266AE1E731716006F2E95 /* ForgotNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotNextViewController.m; sourceTree = "<group>"; };
 		5ADA32C81E68575F00CADC03 /* HeartCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADA32CC1E68576000CADC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ADA32CE1E68576000CADC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +167,18 @@
 				5ADA33271E68611100CADC03 /* LoginViewController.m */,
 				5ADA33291E68612500CADC03 /* RegisterViewController.h */,
 				5ADA332A1E68612500CADC03 /* RegisterViewController.m */,
+				5A5266A11E730E84006F2E95 /* RegisterNextViewController.h */,
+				5A5266A21E730E84006F2E95 /* RegisterNextViewController.m */,
+				5A52669E1E730E2B006F2E95 /* DevicesViewController.h */,
+				5A52669F1E730E2B006F2E95 /* DevicesViewController.m */,
+				5A5266A41E730ED7006F2E95 /* MainViewController.h */,
+				5A5266A51E730ED7006F2E95 /* MainViewController.m */,
+				5A5266A71E731440006F2E95 /* WelcomeViewController.h */,
+				5A5266A81E731440006F2E95 /* WelcomeViewController.m */,
+				5A5266AA1E7316B8006F2E95 /* ForgotViewController.h */,
+				5A5266AB1E7316B8006F2E95 /* ForgotViewController.m */,
+				5A5266AD1E731716006F2E95 /* ForgotNextViewController.h */,
+				5A5266AE1E731716006F2E95 /* ForgotNextViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -289,9 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */,
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
+				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
+				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
 				5ADA32CD1E68576000CADC03 /* main.m in Sources */,
 				5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */,
+				5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */,
+				5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */,
+				5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */,
 				5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
