@@ -34,4 +34,11 @@
 }
 */
 
+- (IBAction)onClickAuthCode:(id)sender {
+}
+
+- (IBAction)onClickNext:(id)sender {
+    [self performSegueWithIdentifier:@"push_register_next" sender:self];
+}
+
 @end

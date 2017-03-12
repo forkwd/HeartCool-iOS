@@ -34,4 +34,8 @@
 }
 */
 
+- (IBAction)onClickNext:(id)sender {
+    [[self navigationController] popToRootViewControllerAnimated:YES];
+}
+
 @end

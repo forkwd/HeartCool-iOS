@@ -34,6 +34,9 @@
 }
 */
 
+- (IBAction)onClickAbout:(id)sender {
+}
+
 - (IBAction)onClickLogin:(id)sender {
     [self performSegueWithIdentifier:@"push_devices" sender:self];
 }
