@@ -22,6 +22,7 @@
 		5ADA32F11E68576000CADC03 /* HeartCoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */; };
 		5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA33271E68611100CADC03 /* LoginViewController.m */; };
 		5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA332A1E68612500CADC03 /* RegisterViewController.m */; };
+		5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		5ADA33271E68611100CADC03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5ADA33291E68612500CADC03 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		5ADA332A1E68612500CADC03 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				5A5266AB1E7316B8006F2E95 /* ForgotViewController.m */,
 				5A5266AD1E731716006F2E95 /* ForgotNextViewController.h */,
 				5A5266AE1E731716006F2E95 /* ForgotNextViewController.m */,
+				5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */,
+				5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */,
 				5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */,
 				5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */,
+				5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */,
 				5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */,
 				5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */,
 			);
