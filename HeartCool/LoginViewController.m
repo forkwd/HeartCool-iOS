@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 
+#import "AppNetTcpUser.h"
+
 @interface LoginViewController ()
 
 @end
@@ -34,11 +36,19 @@
 }
 */
 
-- (IBAction)onClickAbout:(id)sender {
-}
-
 - (IBAction)onClickLogin:(id)sender {
-    [self performSegueWithIdentifier:@"push_devices" sender:self];
+//    [self performSegueWithIdentifier:@"push_devices" sender:self];
+    
+    [AppNetTcpUser validateUserName:@"13077784697" password:@"123456" block:^(bool sucess, NSString *message, NSError *error) {
+        if (sucess) {
+            NSLog(@"success!");
+        }
+        if (error) {
+            NSLog(@"error: %@", error);
+        } else {
+            NSLog(@"message: %@", message);
+        }
+    }];
 }
 
 - (IBAction)onClickRegister:(id)sender {

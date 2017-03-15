@@ -144,7 +144,6 @@
                     <navigationItem key="navigationItem" title="登录" id="6GD-un-6TP">
                         <barButtonItem key="leftBarButtonItem" title="关于" id="bB5-0m-RSY">
                             <connections>
-                                <action selector="onClickAbout:" destination="BYZ-38-t0r" id="Yfp-v0-DPs"/>
                                 <segue destination="hWR-sH-sam" kind="push" id="sPb-ka-a7b"/>
                             </connections>
                         </barButtonItem>

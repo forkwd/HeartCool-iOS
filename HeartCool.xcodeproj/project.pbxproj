@@ -28,6 +28,8 @@
 		5AC046241E7977AB0090A670 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461C1E7977AB0090A670 /* AFURLRequestSerialization.m */; };
 		5AC046251E7977AB0090A670 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461E1E7977AB0090A670 /* AFURLResponseSerialization.m */; };
 		5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046201E7977AB0090A670 /* AFURLSessionManager.m */; };
+		5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046311E797B000090A670 /* HttpAPIClient.m */; };
+		5AC046381E797C4B0090A670 /* AppNetTcpUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046371E797C4B0090A670 /* AppNetTcpUser.m */; };
 		5ADA32CD1E68576000CADC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CC1E68576000CADC03 /* main.m */; };
 		5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CF1E68576000CADC03 /* AppDelegate.m */; };
 		5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D41E68576000CADC03 /* Main.storyboard */; };
@@ -101,6 +103,10 @@
 		5AC0461E1E7977AB0090A670 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		5AC0461F1E7977AB0090A670 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		5AC046201E7977AB0090A670 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		5AC046301E797B000090A670 /* HttpAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpAPIClient.h; sourceTree = "<group>"; };
+		5AC046311E797B000090A670 /* HttpAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpAPIClient.m; sourceTree = "<group>"; };
+		5AC046361E797C4B0090A670 /* AppNetTcpUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNetTcpUser.h; sourceTree = "<group>"; };
+		5AC046371E797C4B0090A670 /* AppNetTcpUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNetTcpUser.m; sourceTree = "<group>"; };
 		5ADA32C81E68575F00CADC03 /* HeartCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADA32CC1E68576000CADC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ADA32CE1E68576000CADC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -204,6 +210,41 @@
 			path = HeartCool/AFNetworking;
 			sourceTree = "<group>";
 		};
+		5AC0462C1E7979E60090A670 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0462D1E7979E60090A670 /* Networking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5AC0462D1E7979E60090A670 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0462E1E7979E60090A670 /* Models */,
+				5AC0462F1E7979E60090A670 /* Networking Extensions */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5AC0462E1E7979E60090A670 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AC046361E797C4B0090A670 /* AppNetTcpUser.h */,
+				5AC046371E797C4B0090A670 /* AppNetTcpUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5AC0462F1E7979E60090A670 /* Networking Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AC046301E797B000090A670 /* HttpAPIClient.h */,
+				5AC046311E797B000090A670 /* HttpAPIClient.m */,
+			);
+			path = "Networking Extensions";
+			sourceTree = "<group>";
+		};
 		5ADA32BF1E68575F00CADC03 = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +272,8 @@
 				5ADA32CE1E68576000CADC03 /* AppDelegate.h */,
 				5ADA32CF1E68576000CADC03 /* AppDelegate.m */,
 				5ADA32D41E68576000CADC03 /* Main.storyboard */,
-				5ADA332C1E68612900CADC03 /* ViewControllers */,
+				5ADA332C1E68612900CADC03 /* Controllers */,
+				5AC0462C1E7979E60090A670 /* Classes */,
 				5ADA32D71E68576000CADC03 /* Assets.xcassets */,
 				5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */,
 				5ADA32DC1E68576000CADC03 /* Info.plist */,
@@ -266,7 +308,7 @@
 			path = HeartCoolUITests;
 			sourceTree = "<group>";
 		};
-		5ADA332C1E68612900CADC03 /* ViewControllers */ = {
+		5ADA332C1E68612900CADC03 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5ADA33261E68611100CADC03 /* LoginViewController.h */,
@@ -288,7 +330,7 @@
 				5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */,
 				5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */,
 			);
-			name = ViewControllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,8 +478,10 @@
 				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
 				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
+				5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */,
 				5A7548181E78569100201770 /* BabyCentralManager.m in Sources */,
 				5A7548191E78569100201770 /* BabyDefine.m in Sources */,
+				5AC046381E797C4B0090A670 /* AppNetTcpUser.m in Sources */,
 				5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */,
 				5A75481E1E78569100201770 /* BabyToy.m in Sources */,
 				5A75481D1E78569100201770 /* BabySpeaker.m in Sources */,
