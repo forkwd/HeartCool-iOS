@@ -22,6 +22,12 @@
 		5A75481C1E78569100201770 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548111E78569100201770 /* BabyRhythm.m */; };
 		5A75481D1E78569100201770 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548131E78569100201770 /* BabySpeaker.m */; };
 		5A75481E1E78569100201770 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548151E78569100201770 /* BabyToy.m */; };
+		5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */; };
+		5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046181E7977AB0090A670 /* AFNetworkReachabilityManager.m */; };
+		5AC046231E7977AB0090A670 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461A1E7977AB0090A670 /* AFSecurityPolicy.m */; };
+		5AC046241E7977AB0090A670 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461C1E7977AB0090A670 /* AFURLRequestSerialization.m */; };
+		5AC046251E7977AB0090A670 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461E1E7977AB0090A670 /* AFURLResponseSerialization.m */; };
+		5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046201E7977AB0090A670 /* AFURLSessionManager.m */; };
 		5ADA32CD1E68576000CADC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CC1E68576000CADC03 /* main.m */; };
 		5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CF1E68576000CADC03 /* AppDelegate.m */; };
 		5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D41E68576000CADC03 /* Main.storyboard */; };
@@ -82,6 +88,19 @@
 		5A7548131E78569100201770 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
 		5A7548141E78569100201770 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
 		5A7548151E78569100201770 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		5AC046141E7977AB0090A670 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		5AC046161E7977AB0090A670 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		5AC046171E7977AB0090A670 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		5AC046181E7977AB0090A670 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		5AC046191E7977AB0090A670 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		5AC0461A1E7977AB0090A670 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		5AC0461B1E7977AB0090A670 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		5AC0461C1E7977AB0090A670 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		5AC0461D1E7977AB0090A670 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		5AC0461E1E7977AB0090A670 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		5AC0461F1E7977AB0090A670 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		5AC046201E7977AB0090A670 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		5ADA32C81E68575F00CADC03 /* HeartCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADA32CC1E68576000CADC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ADA32CE1E68576000CADC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +151,7 @@
 		5A7548021E78568300201770 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5AC046131E7977AB0090A670 /* AFNetworking */,
 				5A7548031E78569100201770 /* BabyBluetooth */,
 			);
 			name = Framework;
@@ -161,6 +181,27 @@
 			);
 			name = BabyBluetooth;
 			path = HeartCool/BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		5AC046131E7977AB0090A670 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5AC046141E7977AB0090A670 /* AFHTTPSessionManager.h */,
+				5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */,
+				5AC046161E7977AB0090A670 /* AFNetworking.h */,
+				5AC046171E7977AB0090A670 /* AFNetworkReachabilityManager.h */,
+				5AC046181E7977AB0090A670 /* AFNetworkReachabilityManager.m */,
+				5AC046191E7977AB0090A670 /* AFSecurityPolicy.h */,
+				5AC0461A1E7977AB0090A670 /* AFSecurityPolicy.m */,
+				5AC0461B1E7977AB0090A670 /* AFURLRequestSerialization.h */,
+				5AC0461C1E7977AB0090A670 /* AFURLRequestSerialization.m */,
+				5AC0461D1E7977AB0090A670 /* AFURLResponseSerialization.h */,
+				5AC0461E1E7977AB0090A670 /* AFURLResponseSerialization.m */,
+				5AC0461F1E7977AB0090A670 /* AFURLSessionManager.h */,
+				5AC046201E7977AB0090A670 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = HeartCool/AFNetworking;
 			sourceTree = "<group>";
 		};
 		5ADA32BF1E68575F00CADC03 = {
@@ -388,6 +429,7 @@
 			files = (
 				5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */,
 				5A7548171E78569100201770 /* BabyCallback.m in Sources */,
+				5AC046231E7977AB0090A670 /* AFSecurityPolicy.m in Sources */,
 				5A75481A1E78569100201770 /* BabyOptions.m in Sources */,
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
 				5A75481B1E78569100201770 /* BabyPeripheralManager.m in Sources */,
@@ -396,15 +438,20 @@
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
 				5A7548181E78569100201770 /* BabyCentralManager.m in Sources */,
 				5A7548191E78569100201770 /* BabyDefine.m in Sources */,
+				5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */,
 				5A75481E1E78569100201770 /* BabyToy.m in Sources */,
 				5A75481D1E78569100201770 /* BabySpeaker.m in Sources */,
+				5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */,
+				5AC046251E7977AB0090A670 /* AFURLResponseSerialization.m in Sources */,
 				5ADA32CD1E68576000CADC03 /* main.m in Sources */,
+				5AC046241E7977AB0090A670 /* AFURLRequestSerialization.m in Sources */,
 				5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */,
 				5A7548161E78569100201770 /* BabyBluetooth.m in Sources */,
 				5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */,
 				5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */,
 				5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */,
 				5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */,
+				5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */,
 				5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
