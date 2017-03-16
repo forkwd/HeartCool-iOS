@@ -53,4 +53,14 @@
     }];
 }
 
++ (void)updatePasswordByApp:(NSString*)telephone password:(NSString*)password block:(void (^)(bool sucess, NSString *message, NSError *error))block {
+    [[HttpAPIClient sharedClient] GET:@"v1/user/updatePasswordByApp" parameters:@{@"telephone": telephone} progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        bool sucess = [JSON valueForKeyPath:@"sucess"];
+        NSString *message = [JSON valueForKeyPath:@"message"];
+        block(sucess, message, nil);
+    } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
+        block(NO, nil, error);
+    }];
+}
+
 @end

@@ -18,4 +18,6 @@
 
 + (void)queryInfoIdByAppUserCode:(NSString*)telephone block:(void (^)(bool sucess, NSString *infoId, NSString *message, NSError *error))block;
 
++ (void)updatePasswordByApp:(NSString*)telephone password:(NSString*)password block:(void (^)(bool sucess, NSString *message, NSError *error))block;
+
 @end
