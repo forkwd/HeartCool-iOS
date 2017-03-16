@@ -14,6 +14,8 @@
 
 + (void)createUserOrUpdateByApp:(NSString*)telephone passWord:(NSString*)passWord realName:(NSString*)realName sex:(NSString*)sex birthdate:(NSString*)birthdate age:(NSString*)age address:(NSString*)address block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block;
 
-+ (void)queryAppUserInfoByInfoId:(NSString*)infoId block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block;
++ (void)queryAppUserInfoByInfoId:(NSString*)infoId block:(void (^)(bool sucess, id appUserInfo, NSError *error))block;
+
++ (void)queryInfoIdByAppUserCode:(NSString*)telephone block:(void (^)(bool sucess, NSString *infoId, NSString *message, NSError *error))block;
 
 @end

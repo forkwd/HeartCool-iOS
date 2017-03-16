@@ -32,13 +32,24 @@
     }];
 }
 
-+ (void)queryAppUserInfoByInfoId:(NSString*)infoId block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block {
-    [[HttpAPIClient sharedClient] GET:@"v1/user/createUserOrUpdateByApp" parameters:@{@"infoId": infoId} progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
++ (void)queryAppUserInfoByInfoId:(NSString*)infoId block:(void (^)(bool sucess, id appUserInfo, NSError *error))block {
+    [[HttpAPIClient sharedClient] GET:@"v1/user/queryAppUserInfoByInfoId" parameters:@{@"infoId": infoId} progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
         bool sucess = [JSON valueForKeyPath:@"sucess"];
         id appUserInfo = [JSON valueForKeyPath:@"appUserInfo"];
         block(sucess, appUserInfo,nil);
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
         block(NO, nil, error);
+    }];
+}
+
++ (void)queryInfoIdByAppUserCode:(NSString*)telephone block:(void (^)(bool sucess, NSString *infoId, NSString *message, NSError *error))block {
+    [[HttpAPIClient sharedClient] GET:@"v1/user/queryInfoIdByAppUserCode" parameters:@{@"telephone": telephone} progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        bool sucess = [JSON valueForKeyPath:@"sucess"];
+        NSString *infoId = [JSON valueForKeyPath:@"infoId"];
+        NSString *message = [JSON valueForKeyPath:@"message"];
+        block(sucess, infoId,message,nil);
+    } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
+        block(NO, nil,nil, error);
     }];
 }
 
