@@ -39,7 +39,7 @@
 - (IBAction)onClickLogin:(id)sender {
 //    [self performSegueWithIdentifier:@"push_devices" sender:self];
     
-    [AppNetTcpUser validateUserName:@"13077784697" password:@"123456" block:^(bool sucess, NSString *message, NSError *error) {
+    [AppNetTcpUser validate:@"13077784697" password:@"123456" block:^(bool sucess, NSString *message, NSError *error) {
         if (sucess) {
             NSLog(@"success!");
         }
