@@ -30,6 +30,8 @@
 		5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046201E7977AB0090A670 /* AFURLSessionManager.m */; };
 		5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046311E797B000090A670 /* HttpAPIClient.m */; };
 		5AC046381E797C4B0090A670 /* AppNetTcpUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046371E797C4B0090A670 /* AppNetTcpUser.m */; };
+		5AD703591E7D96F2007C5E51 /* AppNetTcpSms.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD703581E7D96F2007C5E51 /* AppNetTcpSms.m */; };
+		5AD7035C1E7D9A91007C5E51 /* AppNetTcpInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD7035B1E7D9A91007C5E51 /* AppNetTcpInfo.m */; };
 		5ADA32CD1E68576000CADC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CC1E68576000CADC03 /* main.m */; };
 		5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32CF1E68576000CADC03 /* AppDelegate.m */; };
 		5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA32D41E68576000CADC03 /* Main.storyboard */; };
@@ -107,6 +109,10 @@
 		5AC046311E797B000090A670 /* HttpAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpAPIClient.m; sourceTree = "<group>"; };
 		5AC046361E797C4B0090A670 /* AppNetTcpUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNetTcpUser.h; sourceTree = "<group>"; };
 		5AC046371E797C4B0090A670 /* AppNetTcpUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNetTcpUser.m; sourceTree = "<group>"; };
+		5AD703571E7D96F2007C5E51 /* AppNetTcpSms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNetTcpSms.h; sourceTree = "<group>"; };
+		5AD703581E7D96F2007C5E51 /* AppNetTcpSms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNetTcpSms.m; sourceTree = "<group>"; };
+		5AD7035A1E7D9A91007C5E51 /* AppNetTcpInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNetTcpInfo.h; sourceTree = "<group>"; };
+		5AD7035B1E7D9A91007C5E51 /* AppNetTcpInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNetTcpInfo.m; sourceTree = "<group>"; };
 		5ADA32C81E68575F00CADC03 /* HeartCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADA32CC1E68576000CADC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ADA32CE1E68576000CADC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -232,6 +238,10 @@
 			children = (
 				5AC046361E797C4B0090A670 /* AppNetTcpUser.h */,
 				5AC046371E797C4B0090A670 /* AppNetTcpUser.m */,
+				5AD703571E7D96F2007C5E51 /* AppNetTcpSms.h */,
+				5AD703581E7D96F2007C5E51 /* AppNetTcpSms.m */,
+				5AD7035A1E7D9A91007C5E51 /* AppNetTcpInfo.h */,
+				5AD7035B1E7D9A91007C5E51 /* AppNetTcpInfo.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -476,6 +486,8 @@
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
 				5A75481B1E78569100201770 /* BabyPeripheralManager.m in Sources */,
 				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
+				5AD7035C1E7D9A91007C5E51 /* AppNetTcpInfo.m in Sources */,
+				5AD703591E7D96F2007C5E51 /* AppNetTcpSms.m in Sources */,
 				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
 				5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */,
