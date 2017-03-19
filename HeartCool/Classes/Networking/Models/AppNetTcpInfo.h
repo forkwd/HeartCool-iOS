@@ -10,4 +10,10 @@
 
 @interface AppNetTcpInfo : NSObject
 
++ (void)bindDeviceByMacAddress:(NSString*)infoId mac:(NSString*)macAddress block:(void (^)(bool sucess, NSString *message, NSError *error))block;
+
++ (void)validateUserInfoAndDevice:(NSString*)infoId mac:(NSString*)macAddress block:(void (^)(bool sucess, NSArray *array, NSError *error))block;
+
++ (void)queryBindDeviceByInfoId:(NSString*)infoId block:(void (^)(bool sucess, NSArray *array, NSError *error))block;
+
 @end
