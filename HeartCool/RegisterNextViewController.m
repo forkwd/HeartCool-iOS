@@ -8,7 +8,12 @@
 
 #import "RegisterNextViewController.h"
 
+#import "RegisterPersonalViewController.h"
+
 @interface RegisterNextViewController ()
+
+@property (strong, nonatomic) IBOutlet UITextField *textPassword1;
+@property (strong, nonatomic) IBOutlet UITextField *textPassword2;
 
 @end
 
@@ -24,18 +29,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"push_register_personal"]) {
+        RegisterPersonalViewController *next = [segue destinationViewController];
+        next.username = self.username;
+        next.password = [self.textPassword1 text];
+    }
 }
-*/
+
+#pragma mark - Action
 
 - (IBAction)onClickNext:(id)sender {
-    [[self navigationController] popToRootViewControllerAnimated:YES];
+    if ([[self.textPassword1 text] isEqualToString:[self.textPassword2 text]]) {
+        [self performSegueWithIdentifier:@"push_register_personal" sender:self];
+    }
 }
 
 @end

@@ -31,8 +31,8 @@
     }];
 }
 
-+ (void)createUserOrUpdateByApp:(NSString*)telephone passWord:(NSString*)passWord realName:(NSString*)realName sex:(NSString*)sex birthdate:(NSString*)birthdate age:(NSString*)age address:(NSString*)address block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block {
-    [[HttpAPIClient sharedClient] GET:@"v1/user/createUserOrUpdateByApp" parameters:@{@"telephone": telephone, @"passWord": passWord, @"realName": realName, @"sex": sex, @"birthdate": birthdate, @"age": age, @"address": address} progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
++ (void)createUserOrUpdateByApp:(NSString*)telephone password:(NSString*)password realName:(NSString*)realName sex:(NSString*)sex birthdate:(NSString*)birthdate age:(NSString*)age address:(NSString*)address block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block {
+    [[HttpAPIClient sharedClient] GET:@"v1/user/createUserOrUpdateByApp" parameters:@{@"telephone": telephone, @"passWord": password, @"realName": realName, @"sex": sex, @"birthdate": birthdate, @"age": age, @"address": address} progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
         bool sucess = [JSON valueForKeyPath:@"sucess"];
         NSString *userInfoId = [JSON valueForKeyPath:@"userInfoId"];
         block(sucess, userInfoId, nil);

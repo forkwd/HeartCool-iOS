@@ -12,6 +12,11 @@
 
 @interface LoginViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *textUsername;
+@property (strong, nonatomic) IBOutlet UITextField *textPassword;
+
+@property (strong, nonatomic) IBOutlet UISwitch *switchRemeber;
+
 @end
 
 @implementation LoginViewController
@@ -37,11 +42,10 @@
 */
 
 - (IBAction)onClickLogin:(id)sender {
-//    [self performSegueWithIdentifier:@"push_devices" sender:self];
-    
-    [AppNetTcpUser validate:@"13077784697" password:@"123456" block:^(bool sucess, NSString *message, NSError *error) {
+    [AppNetTcpUser validate:[self.textUsername text] password:[self.textPassword text] block:^(bool sucess, NSString *message, NSError *error) {
         if (sucess) {
             NSLog(@"success!");
+            [self performSegueWithIdentifier:@"push_devices" sender:self];
         }
         if (error) {
             NSLog(@"error: %@", error);

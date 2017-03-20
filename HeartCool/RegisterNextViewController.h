@@ -10,4 +10,6 @@
 
 @interface RegisterNextViewController : UIViewController
 
+@property (strong, nonatomic) NSString *username;
+
 @end

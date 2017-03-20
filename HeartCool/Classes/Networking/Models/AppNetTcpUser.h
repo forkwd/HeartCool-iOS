@@ -14,7 +14,7 @@
 
 + (void)validate:(NSString*)name password:(NSString*)pwd block:(void (^)(bool sucess, NSString *message, NSError *error))block;
 
-+ (void)createUserOrUpdateByApp:(NSString*)telephone passWord:(NSString*)passWord realName:(NSString*)realName sex:(NSString*)sex birthdate:(NSString*)birthdate age:(NSString*)age address:(NSString*)address block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block;
++ (void)createUserOrUpdateByApp:(NSString*)telephone password:(NSString*)password realName:(NSString*)realName sex:(NSString*)sex birthdate:(NSString*)birthdate age:(NSString*)age address:(NSString*)address block:(void (^)(bool sucess, NSString *userInfoId, NSError *error))block;
 
 + (void)queryAppUserInfoByInfoId:(NSString*)infoId block:(void (^)(bool sucess, id appUserInfo, NSError *error))block;
 
