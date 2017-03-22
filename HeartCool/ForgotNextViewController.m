@@ -8,7 +8,12 @@
 
 #import "ForgotNextViewController.h"
 
+#import "AppNetTcpUser.h"
+
 @interface ForgotNextViewController ()
+
+@property (strong, nonatomic) IBOutlet UITextField *textPassword1;
+@property (strong, nonatomic) IBOutlet UITextField *textPassword2;
 
 @end
 
@@ -35,7 +40,13 @@
 */
 
 - (IBAction)onClickNext:(id)sender {
-    [[self navigationController] popToRootViewControllerAnimated:YES];
+    if ([[self.textPassword1 text] isEqualToString:[self.textPassword2 text]]) {
+        [AppNetTcpUser updatePasswordByApp:self.username password:[self.textPassword1 text] block:^(bool sucess, NSString *message, NSError *error) {
+            if (sucess) {
+                [[self navigationController] popToRootViewControllerAnimated:YES];
+            }
+        }];
+    }
 }
 
 @end

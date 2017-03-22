@@ -10,4 +10,6 @@
 
 @interface ForgotNextViewController : UIViewController
 
+@property (strong, nonatomic) NSString *username;
+
 @end
