@@ -45,7 +45,12 @@
 - (IBAction)onClickFinish:(id)sender {
     [self.textTel setText:self.username];
     
-    [AppNetTcpUser createUserOrUpdateByApp:self.username password:self.password realName:[self.textName text] sex:self.segCtrlSex.numberOfSegments==0?@"men":@"female" birthdate:[self.textBirthday text] age:@"0" address:[self.textAddress text] block:^(bool sucess, NSString *userInfoId, NSError *error) {
+    int age = 0;
+    NSString *birthdate = [self.textBirthday text];
+    if ([birthdate length] >= 4) {
+        age = [[birthdate substringToIndex:4] intValue];
+    }
+    [AppNetTcpUser createUserOrUpdateByApp:self.username password:self.password realName:[self.textName text] sex:self.segCtrlSex.numberOfSegments==0?@"men":@"female" birthdate:birthdate age:[NSString stringWithFormat:@"%d", age] address:[self.textAddress text] block:^(bool sucess, NSString *userInfoId, NSError *error) {
         if (sucess) {
             [[self navigationController] popToRootViewControllerAnimated:YES];
         }
