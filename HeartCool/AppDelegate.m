@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import <CoreBluetooth/CoreBluetooth.h>
+#import "BabyBluetooth.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSArray *centralManagerIdentifiers = launchOptions[UIApplicationLaunchOptionsBluetoothCentralsKey];
+    NSLog(@"%@",centralManagerIdentifiers);
+    
     return YES;
 }
 

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+#import <CoreBluetooth/CoreBluetooth.h>
+#import "BabyBluetooth.h"
+
+@interface MainViewController : UIViewController {
+    @public
+    BabyBluetooth *baby;
+}
+
+@property(strong, nonatomic)CBPeripheral *currPeripheral;
 
 @end

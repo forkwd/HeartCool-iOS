@@ -44,6 +44,11 @@
 		5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA33271E68611100CADC03 /* LoginViewController.m */; };
 		5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA332A1E68612500CADC03 /* RegisterViewController.m */; };
 		5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */; };
+		5AFD82DF1E85364F00C36F30 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD82D61E85364F00C36F30 /* SVIndefiniteAnimatedView.m */; };
+		5AFD82E01E85364F00C36F30 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD82D81E85364F00C36F30 /* SVProgressAnimatedView.m */; };
+		5AFD82E11E85364F00C36F30 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD82DA1E85364F00C36F30 /* SVProgressHUD.bundle */; };
+		5AFD82E21E85364F00C36F30 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD82DC1E85364F00C36F30 /* SVProgressHUD.m */; };
+		5AFD82E31E85364F00C36F30 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD82DE1E85364F00C36F30 /* SVRadialGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +147,16 @@
 		5ADA332A1E68612500CADC03 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		5AFD82D51E85364F00C36F30 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		5AFD82D61E85364F00C36F30 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		5AFD82D71E85364F00C36F30 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		5AFD82D81E85364F00C36F30 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		5AFD82D91E85364F00C36F30 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		5AFD82DA1E85364F00C36F30 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		5AFD82DB1E85364F00C36F30 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		5AFD82DC1E85364F00C36F30 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		5AFD82DD1E85364F00C36F30 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		5AFD82DE1E85364F00C36F30 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +188,7 @@
 		5A7548021E78568300201770 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5AFD82D41E85364F00C36F30 /* SVProgressHUD */,
 				5AC046131E7977AB0090A670 /* AFNetworking */,
 				5A7548031E78569100201770 /* BabyBluetooth */,
 			);
@@ -368,6 +384,24 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		5AFD82D41E85364F00C36F30 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD82D51E85364F00C36F30 /* SVIndefiniteAnimatedView.h */,
+				5AFD82D61E85364F00C36F30 /* SVIndefiniteAnimatedView.m */,
+				5AFD82D71E85364F00C36F30 /* SVProgressAnimatedView.h */,
+				5AFD82D81E85364F00C36F30 /* SVProgressAnimatedView.m */,
+				5AFD82D91E85364F00C36F30 /* SVProgressHUD-Prefix.pch */,
+				5AFD82DA1E85364F00C36F30 /* SVProgressHUD.bundle */,
+				5AFD82DB1E85364F00C36F30 /* SVProgressHUD.h */,
+				5AFD82DC1E85364F00C36F30 /* SVProgressHUD.m */,
+				5AFD82DD1E85364F00C36F30 /* SVRadialGradientLayer.h */,
+				5AFD82DE1E85364F00C36F30 /* SVRadialGradientLayer.m */,
+			);
+			name = SVProgressHUD;
+			path = HeartCool/SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +514,7 @@
 				5ADA32DB1E68576000CADC03 /* LaunchScreen.storyboard in Resources */,
 				5ADA32D81E68576000CADC03 /* Assets.xcassets in Resources */,
 				5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */,
+				5AFD82E11E85364F00C36F30 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,8 +541,10 @@
 			files = (
 				5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */,
 				5A7548171E78569100201770 /* BabyCallback.m in Sources */,
+				5AFD82E01E85364F00C36F30 /* SVProgressAnimatedView.m in Sources */,
 				5AC046231E7977AB0090A670 /* AFSecurityPolicy.m in Sources */,
 				5A75481A1E78569100201770 /* BabyOptions.m in Sources */,
+				5AFD82E21E85364F00C36F30 /* SVProgressHUD.m in Sources */,
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
 				5A75481B1E78569100201770 /* BabyPeripheralManager.m in Sources */,
 				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
@@ -516,6 +553,7 @@
 				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
 				5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */,
+				5AFD82E31E85364F00C36F30 /* SVRadialGradientLayer.m in Sources */,
 				5A7548181E78569100201770 /* BabyCentralManager.m in Sources */,
 				5A7548191E78569100201770 /* BabyDefine.m in Sources */,
 				5AC046381E797C4B0090A670 /* AppNetTcpUser.m in Sources */,
@@ -531,6 +569,7 @@
 				5A7548161E78569100201770 /* BabyBluetooth.m in Sources */,
 				5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */,
 				5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */,
+				5AFD82DF1E85364F00C36F30 /* SVIndefiniteAnimatedView.m in Sources */,
 				5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */,
 				5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */,
 				5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DevicesViewController : UIViewController
+@interface DevicesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
