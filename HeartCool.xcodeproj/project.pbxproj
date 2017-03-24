@@ -44,6 +44,9 @@
 		5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA33271E68611100CADC03 /* LoginViewController.m */; };
 		5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA332A1E68612500CADC03 /* RegisterViewController.m */; };
 		5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */; };
+		5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA41E857470000F0D8E /* SAMKeychain.m */; };
+		5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA61E857470000F0D8E /* SAMKeychainQuery.m */; };
+		5AFCDDAC1E8574FD000F0D8E /* KeychainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDAB1E8574FD000F0D8E /* KeychainStore.m */; };
 		5AFD82DF1E85364F00C36F30 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD82D61E85364F00C36F30 /* SVIndefiniteAnimatedView.m */; };
 		5AFD82E01E85364F00C36F30 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD82D81E85364F00C36F30 /* SVProgressAnimatedView.m */; };
 		5AFD82E11E85364F00C36F30 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD82DA1E85364F00C36F30 /* SVProgressHUD.bundle */; };
@@ -147,6 +150,12 @@
 		5ADA332A1E68612500CADC03 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		5AFCDDA31E857470000F0D8E /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		5AFCDDA41E857470000F0D8E /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		5AFCDDA51E857470000F0D8E /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		5AFCDDA61E857470000F0D8E /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
+		5AFCDDAA1E8574FD000F0D8E /* KeychainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainStore.h; sourceTree = "<group>"; };
+		5AFCDDAB1E8574FD000F0D8E /* KeychainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainStore.m; sourceTree = "<group>"; };
 		5AFD82D51E85364F00C36F30 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		5AFD82D61E85364F00C36F30 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		5AFD82D71E85364F00C36F30 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -188,6 +197,7 @@
 		5A7548021E78568300201770 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5AFCDDA21E857470000F0D8E /* SAMKeychain */,
 				5AFD82D41E85364F00C36F30 /* SVProgressHUD */,
 				5AC046131E7977AB0090A670 /* AFNetworking */,
 				5A7548031E78569100201770 /* BabyBluetooth */,
@@ -257,6 +267,7 @@
 		5AC0462C1E7979E60090A670 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5AFCDDA91E8574B1000F0D8E /* Local */,
 				5AC0462D1E7979E60090A670 /* Networking */,
 			);
 			path = Classes;
@@ -382,6 +393,27 @@
 				5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5AFCDDA21E857470000F0D8E /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				5AFCDDA31E857470000F0D8E /* SAMKeychain.h */,
+				5AFCDDA41E857470000F0D8E /* SAMKeychain.m */,
+				5AFCDDA51E857470000F0D8E /* SAMKeychainQuery.h */,
+				5AFCDDA61E857470000F0D8E /* SAMKeychainQuery.m */,
+			);
+			name = SAMKeychain;
+			path = HeartCool/SAMKeychain;
+			sourceTree = "<group>";
+		};
+		5AFCDDA91E8574B1000F0D8E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				5AFCDDAA1E8574FD000F0D8E /* KeychainStore.h */,
+				5AFCDDAB1E8574FD000F0D8E /* KeychainStore.m */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		5AFD82D41E85364F00C36F30 /* SVProgressHUD */ = {
@@ -550,8 +582,10 @@
 				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
 				5AD7035C1E7D9A91007C5E51 /* AppNetTcpInfo.m in Sources */,
 				5AD703591E7D96F2007C5E51 /* AppNetTcpSms.m in Sources */,
+				5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */,
 				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
+				5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */,
 				5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */,
 				5AFD82E31E85364F00C36F30 /* SVRadialGradientLayer.m in Sources */,
 				5A7548181E78569100201770 /* BabyCentralManager.m in Sources */,
@@ -560,6 +594,7 @@
 				5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */,
 				5A75481E1E78569100201770 /* BabyToy.m in Sources */,
 				5AACB2F81E803871001E5ECE /* RegisterPersonalViewController.m in Sources */,
+				5AFCDDAC1E8574FD000F0D8E /* KeychainStore.m in Sources */,
 				5A75481D1E78569100201770 /* BabySpeaker.m in Sources */,
 				5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */,
 				5AC046251E7977AB0090A670 /* AFURLResponseSerialization.m in Sources */,
