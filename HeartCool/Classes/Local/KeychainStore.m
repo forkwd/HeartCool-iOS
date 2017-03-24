@@ -24,7 +24,7 @@
 }
 
 + (NSString*)password:(NSString*)account {
-    [SAMKeychain passwordForService:ServiceUser account:account];
+    return [SAMKeychain passwordForService:ServiceUser account:account];
 }
 
 + (void)saveAccount:(NSString*)account passsword:(NSString*)passsword {
