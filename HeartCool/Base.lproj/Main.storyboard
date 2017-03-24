@@ -41,7 +41,7 @@
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8U-lX-kuU">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8U-lX-kuU" customClass="UIControl">
                                         <rect key="frame" x="0.0" y="8" width="343" height="192"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -58,6 +58,9 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="onTouchDownView:" destination="BYZ-38-t0r" eventType="touchDown" id="2dX-Ze-pvi"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBK-AH-LAR">
                                         <rect key="frame" x="8" y="404" width="327" height="193"/>
@@ -113,6 +116,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitUsername:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="CrB-nI-s1W"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VNH-mJ-QW9"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu6-nX-V48">
                                                 <rect key="frame" x="12" y="75" width="323" height="21"/>
@@ -127,6 +134,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitPassword:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="3SH-Qy-Cex"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="R00-vC-R3f"/>
+                                                </connections>
                                             </textField>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hl4-Bn-eow">
                                                 <rect key="frame" x="8" y="155" width="51" height="31"/>
@@ -298,11 +309,11 @@
                         <viewControllerLayoutGuide type="top" id="ZsI-bk-FmG"/>
                         <viewControllerLayoutGuide type="bottom" id="wDj-4d-tpe"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oQO-9T-9QK">
+                    <view key="view" contentMode="scaleToFill" id="oQO-9T-9QK" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-pe-cN9">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-pe-cN9" customClass="UIControl">
                                 <rect key="frame" x="24" y="203" width="327" height="261"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -319,6 +330,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="onDidEndOnExitUsername:" destination="xz0-Ms-CFB" eventType="editingDidEndOnExit" id="Rg0-DR-ZSK"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="验证码" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOp-XZ-kGs">
                                         <rect key="frame" x="8" y="112" width="80" height="36"/>
@@ -333,9 +347,15 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="onDidEndOnExitCaptcha:" destination="xz0-Ms-CFB" eventType="editingDidEndOnExit" id="iXn-JV-jNq"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onTouchDownView:" destination="xz0-Ms-CFB" eventType="touchDown" id="kfn-as-U22"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN5-jN-F8P">
                                 <rect key="frame" x="24" y="586" width="327" height="61"/>
@@ -351,6 +371,9 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="onTouchDownView:" destination="xz0-Ms-CFB" eventType="touchDown" id="BvR-oA-fne"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="忘记密码" id="O21-z0-Csj">
                         <barButtonItem key="rightBarButtonItem" title="下一步" style="done" id="eCb-Uh-D6O">
@@ -378,15 +401,15 @@
                         <viewControllerLayoutGuide type="top" id="QSl-Tp-AE1"/>
                         <viewControllerLayoutGuide type="bottom" id="Cvy-su-4OL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SQM-Zi-ZTi">
+                    <view key="view" contentMode="scaleToFill" id="SQM-Zi-ZTi" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYT-Kx-ACc">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYT-Kx-ACc" customClass="UIControl">
                                 <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8V-gv-XHH">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8V-gv-XHH" customClass="UIControl">
                                         <rect key="frame" x="8" y="163" width="327" height="261"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -403,6 +426,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitUsername:" destination="2Oy-iy-BXe" eventType="editingDidEndOnExit" id="9gw-eU-nhu"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="验证码" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-wB-s1m">
                                                 <rect key="frame" x="8" y="112" width="80" height="36"/>
@@ -417,9 +443,15 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitCaptcha:" destination="2Oy-iy-BXe" eventType="editingDidEndOnExit" id="vfr-ct-AmN"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="onTouchDownView:" destination="2Oy-iy-BXe" eventType="touchDown" id="3qg-tf-UwV"/>
+                                        </connections>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JQ-n4-J6B">
                                         <rect key="frame" x="8" y="518" width="327" height="61"/>
@@ -435,9 +467,15 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onTouchDownView:" destination="2Oy-iy-BXe" eventType="editingDidEndOnExit" id="ecB-Zo-zyE"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="onTouchDownView:" destination="2Oy-iy-BXe" eventType="touchDown" id="RS3-wh-4HY"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="7XU-nT-QkI">
                         <barButtonItem key="rightBarButtonItem" title="下一步" id="PAC-mj-uWD">
@@ -469,7 +507,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-Qo-41B">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-Qo-41B" customClass="UIControl">
                                 <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -490,6 +528,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitPassword1:" destination="URl-XJ-bX4" eventType="editingDidEndOnExit" id="rIM-r1-F2a"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4A-SP-i8u">
                                                 <rect key="frame" x="8" y="112" width="80" height="36"/>
@@ -504,12 +545,18 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitPassword2:" destination="URl-XJ-bX4" eventType="editingDidEndOnExit" id="Yw5-qd-1dc"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onTouchDownView:" destination="URl-XJ-bX4" eventType="touchDown" id="FqV-DT-YzJ"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -539,11 +586,11 @@
                         <viewControllerLayoutGuide type="top" id="f20-1Q-M2d"/>
                         <viewControllerLayoutGuide type="bottom" id="a0g-GA-TQ8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AXM-SI-UsR">
+                    <view key="view" contentMode="scaleToFill" id="AXM-SI-UsR" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDW-y5-3lC">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDW-y5-3lC" customClass="UIControl">
                                 <rect key="frame" x="67" y="163" width="240" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -560,6 +607,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onDidEndOnExitName:" destination="aN7-eD-kMj" eventType="editingDidEndOnExit" id="poH-dA-lqP"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="性别" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b66-OJ-2vE">
                                         <rect key="frame" x="8" y="105" width="50.5" height="21"/>
@@ -589,6 +639,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onDidEndOnExitBirthday:" destination="aN7-eD-kMj" eventType="editingDidEndOnExit" id="J36-GL-GFd"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手机" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yW-vG-UY0">
                                         <rect key="frame" x="8" y="219" width="50.5" height="21"/>
@@ -617,12 +670,21 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onDidEndOnExitAddress:" destination="aN7-eD-kMj" eventType="editingDidEndOnExit" id="que-t4-MBs"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onTouchDownView:" destination="aN7-eD-kMj" eventType="touchDown" id="zFB-nd-kP6"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="onTouchDownView:" destination="aN7-eD-kMj" eventType="touchDown" id="rrN-jl-967"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="完成注册" id="kDP-io-tOs">
                         <barButtonItem key="rightBarButtonItem" title="确认" id="2AQ-TL-wqJ">
@@ -655,11 +717,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wpj-ef-hH3">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wpj-ef-hH3" customClass="UIControl">
                                 <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyu-qI-Xad">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyu-qI-Xad" customClass="UIControl">
                                         <rect key="frame" x="8" y="163" width="327" height="261"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -676,6 +738,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitPassword1:" destination="YhF-Yu-xfC" eventType="editingDidEndOnExit" id="V7q-6q-ING"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S75-q3-YU8">
                                                 <rect key="frame" x="8" y="112" width="80" height="36"/>
@@ -690,12 +755,21 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onDidEndOnExitPassword2:" destination="YhF-Yu-xfC" eventType="editingDidEndOnExit" id="Rsz-Wr-4mP"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="onTouchDownView:" destination="YhF-Yu-xfC" eventType="touchDown" id="Mp4-AD-vHD"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onTouchDownView:" destination="YhF-Yu-xfC" eventType="touchDown" id="MJc-E6-Wya"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -42,6 +42,24 @@
 }
 */
 
+#pragma mark - Action
+
+- (IBAction)onDidEndOnExitName:(id)sender {
+    [self.textBirthday becomeFirstResponder];
+}
+
+- (IBAction)onDidEndOnExitBirthday:(id)sender {
+    [self.textAddress becomeFirstResponder];
+}
+
+- (IBAction)onDidEndOnExitAddress:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)onTouchDownView:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
 - (IBAction)onClickFinish:(id)sender {
     [self.textTel setText:self.username];
     

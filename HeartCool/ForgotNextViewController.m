@@ -39,6 +39,20 @@
 }
 */
 
+#pragma mark - Action
+
+- (IBAction)onDidEndOnExitPassword1:(id)sender {
+    [self.textPassword2 becomeFirstResponder];
+}
+
+- (IBAction)onDidEndOnExitPassword2:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)onTouchDownView:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
 - (IBAction)onClickNext:(id)sender {
     if ([[self.textPassword1 text] isEqualToString:[self.textPassword2 text]]) {
         [AppNetTcpUser updatePasswordByApp:self.username password:[self.textPassword1 text] block:^(bool sucess, NSString *message, NSError *error) {

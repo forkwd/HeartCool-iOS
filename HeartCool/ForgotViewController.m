@@ -34,7 +34,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -48,6 +47,18 @@
 }
 
 #pragma mark - Action
+
+- (IBAction)onDidEndOnExitUsername:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)onDidEndOnExitCaptcha:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)onTouchDownView:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
 
 - (IBAction)onClickAuthCode:(id)sender {
     if ([[self.textUsername text] length] >= 11) {

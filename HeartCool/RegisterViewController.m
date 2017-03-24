@@ -49,6 +49,18 @@
 
 #pragma mark - Action
 
+- (IBAction)onDidEndOnExitUsername:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)onDidEndOnExitCaptcha:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)onTouchDownView:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
 - (IBAction)onClickAuthCode:(id)sender {
     self.code = [NSString stringWithFormat:@"%04d", arc4random() % 10000];
     [AppNetTcpSms sendMessage:[self.textUsername text] code:self.code block:^(bool sucess, NSString *message, NSError *error) {

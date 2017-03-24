@@ -49,6 +49,21 @@
 }
 */
 
+#pragma mark - Action
+
+- (IBAction)onDidEndOnExitUsername:(id)sender {
+    [self.textPassword becomeFirstResponder];
+}
+
+- (IBAction)onDidEndOnExitPassword:(id)sender {
+    [sender resignFirstResponder];
+    [self.btn_login sendActionsForControlEvents:UIControlEventTouchUpInside];
+}
+
+- (IBAction)onTouchDownView:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
 - (IBAction)onClickLogin:(id)sender {
     [self performSegueWithIdentifier:@"push_devices" sender:self];
     if (true) {
