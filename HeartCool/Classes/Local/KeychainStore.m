@@ -10,29 +10,20 @@
 
 #import "SAMKeychain.h"
 
-#define ServiceUser @"ServiceUser"
-#define ServiceDevices @"ServiceDevices"
+#define Service @"Service"
 
 @implementation KeychainStore
 
-+ (NSString*)account {
-    NSArray *array = [SAMKeychain accountsForService:ServiceUser];
-    if ([array count] == 0) {
-        return @"";
-    }
-    return array[0];
++ (NSArray*)keys {
+    return [SAMKeychain accountsForService:Service];
 }
 
-+ (NSString*)password:(NSString*)account {
-    return [SAMKeychain passwordForService:ServiceUser account:account];
++ (NSString*)read:(NSString*)key {
+    return [SAMKeychain passwordForService:Service account:key];
 }
 
-+ (void)saveAccount:(NSString*)account passsword:(NSString*)passsword {
-    [SAMKeychain setPassword:passsword forService:ServiceUser account:account];
-}
-
-+ (NSArray*)listBindDevices {
-    return [SAMKeychain accountsForService:ServiceDevices];
++ (void)save:(NSString*)key value:(NSString*)value {
+    [SAMKeychain setPassword:value forService:Service account:key];
 }
 
 @end

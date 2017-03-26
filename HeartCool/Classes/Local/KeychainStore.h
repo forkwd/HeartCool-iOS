@@ -10,8 +10,8 @@
 
 @interface KeychainStore : NSObject
 
-+ (NSString*)account;
-+ (NSString*)password:(NSString*)account;
-+ (void)saveAccount:(NSString*)account passsword:(NSString*)passsword;
++ (NSArray*)keys;
++ (NSString*)read:(NSString*)key;
++ (void)save:(NSString*)key value:(NSString*)value;
 
 @end

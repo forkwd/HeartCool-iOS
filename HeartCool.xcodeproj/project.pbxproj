@@ -22,6 +22,8 @@
 		5A75481C1E78569100201770 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548111E78569100201770 /* BabyRhythm.m */; };
 		5A75481D1E78569100201770 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548131E78569100201770 /* BabySpeaker.m */; };
 		5A75481E1E78569100201770 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548151E78569100201770 /* BabyToy.m */; };
+		5A9CB2451E87BFB400199CEF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB2441E87BFB400199CEF /* User.m */; };
+		5A9CB2481E87C0BD00199CEF /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB2471E87C0BD00199CEF /* Device.m */; };
 		5AACB2F21E801A18001E5ECE /* libaerocardio_dsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AACB2F11E801A18001E5ECE /* libaerocardio_dsp.a */; };
 		5AACB2F81E803871001E5ECE /* RegisterPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AACB2F71E803871001E5ECE /* RegisterPersonalViewController.m */; };
 		5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */; };
@@ -73,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A516E2F1E8801AA0001631F /* WDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSingleton.h; sourceTree = "<group>"; };
 		5A52669E1E730E2B006F2E95 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
 		5A52669F1E730E2B006F2E95 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
 		5A5266A11E730E84006F2E95 /* RegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterNextViewController.h; sourceTree = "<group>"; };
@@ -103,6 +106,10 @@
 		5A7548131E78569100201770 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
 		5A7548141E78569100201770 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
 		5A7548151E78569100201770 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		5A9CB2431E87BFB400199CEF /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5A9CB2441E87BFB400199CEF /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5A9CB2461E87C0BD00199CEF /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		5A9CB2471E87C0BD00199CEF /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 		5AACB2ED1E801A18001E5ECE /* commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commons.h; sourceTree = "<group>"; };
 		5AACB2EE1E801A18001E5ECE /* DspEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DspEngine.h; sourceTree = "<group>"; };
 		5AACB2EF1E801A18001E5ECE /* Ecg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ecg.h; sourceTree = "<group>"; };
@@ -232,6 +239,17 @@
 			);
 			name = BabyBluetooth;
 			path = HeartCool/BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		5A9CB2421E87BF9F00199CEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CB2431E87BFB400199CEF /* User.h */,
+				5A9CB2441E87BFB400199CEF /* User.m */,
+				5A9CB2461E87C0BD00199CEF /* Device.h */,
+				5A9CB2471E87C0BD00199CEF /* Device.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5AACB2EC1E8019C8001E5ECE /* Library */ = {
@@ -413,10 +431,12 @@
 		5AFCDDA91E8574B1000F0D8E /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				5A9CB2421E87BF9F00199CEF /* Models */,
 				5AFCDDAA1E8574FD000F0D8E /* KeychainStore.h */,
 				5AFCDDAB1E8574FD000F0D8E /* KeychainStore.m */,
 				5AFCDDAD1E857DD4000F0D8E /* StringValidator.h */,
 				5AFCDDAE1E857DD4000F0D8E /* StringValidator.m */,
+				5A516E2F1E8801AA0001631F /* WDSingleton.h */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -576,6 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9CB2451E87BFB400199CEF /* User.m in Sources */,
 				5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */,
 				5AFCDDAF1E857DD4000F0D8E /* StringValidator.m in Sources */,
 				5A7548171E78569100201770 /* BabyCallback.m in Sources */,
@@ -586,6 +607,7 @@
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
 				5A75481B1E78569100201770 /* BabyPeripheralManager.m in Sources */,
 				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
+				5A9CB2481E87C0BD00199CEF /* Device.m in Sources */,
 				5AD7035C1E7D9A91007C5E51 /* AppNetTcpInfo.m in Sources */,
 				5AD703591E7D96F2007C5E51 /* AppNetTcpSms.m in Sources */,
 				5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */,

@@ -10,4 +10,9 @@
 
 @interface StringValidator : NSObject
 
++ (BOOL)isNumber:(NSString *)num;
++ (BOOL)isNumberOrLetter:(NSString *)num;
++ (BOOL)isMobileNumber:(NSString *)mobileNum;
++ (BOOL)isBlankString:(NSString *)string;
+
 @end

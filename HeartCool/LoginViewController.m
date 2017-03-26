@@ -10,7 +10,8 @@
 
 #import "AppNetTcpUser.h"
 #import "SVProgressHUD.h"
-#import "KeychainStore.h"
+
+#import "User.h"
 
 @interface LoginViewController ()
 
@@ -25,13 +26,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *account = [KeychainStore account];
-    if ([account length] >= 11) {
-        [self.textUsername setText:account];
-        [self.textPassword setText:[KeychainStore password:account]];
-    } else {
-        [self.switchRemeber setOn:YES];
+    User *user = [User shared];
+    if ([user->username length] > 0) {
+        [self.textUsername setText:user->username];
+        [self.textPassword setText:user->password];
     }
+    [self.switchRemeber setOn:[user isRemeber]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,7 +73,12 @@
         if (sucess) {
             NSLog(@"success!");
             [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-            [KeychainStore saveAccount:[self.textUsername text] passsword:[self.switchRemeber isOn]?[self.textPassword text]:@""];
+            
+            User *user = [User shared];
+            user->username = [self.textUsername text];
+            user->password = [self.switchRemeber isOn]?[self.textPassword text]:@"";
+            [user save];
+
             [self performSegueWithIdentifier:@"push_devices" sender:self];
         }
         if (error) {
