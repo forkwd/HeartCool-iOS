@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0C094F1E94909200E8693F /* ACReuseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C094E1E94909200E8693F /* ACReuseQueue.m */; };
 		5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A52669F1E730E2B006F2E95 /* DevicesViewController.m */; };
 		5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A21E730E84006F2E95 /* RegisterNextViewController.m */; };
 		5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A51E730ED7006F2E95 /* MainViewController.m */; };
@@ -75,6 +76,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A0C094B1E94909200E8693F /* ACReusableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACReusableObject.h; sourceTree = "<group>"; };
+		5A0C094C1E94909200E8693F /* ACReuseQueue-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACReuseQueue-Prefix.pch"; sourceTree = "<group>"; };
+		5A0C094D1E94909200E8693F /* ACReuseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACReuseQueue.h; sourceTree = "<group>"; };
+		5A0C094E1E94909200E8693F /* ACReuseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACReuseQueue.m; sourceTree = "<group>"; };
 		5A516E2F1E8801AA0001631F /* WDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSingleton.h; sourceTree = "<group>"; };
 		5A52669E1E730E2B006F2E95 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
 		5A52669F1E730E2B006F2E95 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
@@ -204,9 +209,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0C094A1E94909200E8693F /* ACReuseQueue */ = {
+			isa = PBXGroup;
+			children = (
+				5A0C094B1E94909200E8693F /* ACReusableObject.h */,
+				5A0C094C1E94909200E8693F /* ACReuseQueue-Prefix.pch */,
+				5A0C094D1E94909200E8693F /* ACReuseQueue.h */,
+				5A0C094E1E94909200E8693F /* ACReuseQueue.m */,
+			);
+			name = ACReuseQueue;
+			path = HeartCool/ACReuseQueue;
+			sourceTree = "<group>";
+		};
 		5A7548021E78568300201770 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5A0C094A1E94909200E8693F /* ACReuseQueue */,
 				5AFCDDA21E857470000F0D8E /* SAMKeychain */,
 				5AFD82D41E85364F00C36F30 /* SVProgressHUD */,
 				5AC046131E7977AB0090A670 /* AFNetworking */,
@@ -612,6 +630,7 @@
 				5AD703591E7D96F2007C5E51 /* AppNetTcpSms.m in Sources */,
 				5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */,
 				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
+				5A0C094F1E94909200E8693F /* ACReuseQueue.m in Sources */,
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
 				5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */,
 				5AC046321E797B000090A670 /* HttpAPIClient.m in Sources */,

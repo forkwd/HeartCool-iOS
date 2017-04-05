@@ -65,8 +65,8 @@
 }
 
 - (IBAction)onClickLogin:(id)sender {
-    [self performSegueWithIdentifier:@"push_devices" sender:self];
     if (true) {
+        [self performSegueWithIdentifier:@"push_devices" sender:self];
         return;// TODO: test
     }
     [AppNetTcpUser validate:[self.textUsername text] password:[self.textPassword text] block:^(bool sucess, NSString *message, NSError *error) {
