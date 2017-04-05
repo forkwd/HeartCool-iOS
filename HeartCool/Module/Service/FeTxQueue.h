@@ -1,5 +1,5 @@
 //
-//  AppTxQueue.h
+//  FeTxQueue.h
 //  HeartCool
 //
 //  Created by wd on 2017/4/5.
@@ -9,19 +9,19 @@
 #import <Foundation/Foundation.h>
 
 #import "BlockingQueue.h"
-#import "AppMessage.h"
+#import "FeMessage.h"
 #import "WDSingleton.h"
 
-@interface AppTxQueue : NSObject {
-    @private
+@interface FeTxQueue : NSObject {
+@private
     BlockingQueue *queue;
 }
 
-WDSingletonH(AppTxQueue)
+WDSingletonH(FeTxQueue)
 
-+ (AppTxQueue*)shared;
++ (FeTxQueue*)shared;
 
-- (void)put:(AppMessage*)msg;
-- (AppMessage*)take;
+- (void)put:(FeMessage*)msg;
+- (FeMessage*)take;
 
 @end

@@ -10,6 +10,8 @@
 
 #import "ACReuseQueue.h"
 
+#include "EcgMark.h"
+
 static int const TYPE_LOGIN = 1; //user login msg
 static int const TYPE_LOGIN_ACK = 2; //user login msg ack
 static int const TYPE_REG = 3; //register authorized device
@@ -24,11 +26,15 @@ static Byte const ACK_OK = 0x00;
 static Byte const ACK_NO = 0x00ff;
 
 @interface AppMessage : NSObject <ACReusableObject> {
-    @private
+    @public
     int type;
     NSData *body;
 }
 
 @property (nonatomic, copy) NSString *reuseIdentifier;
+
+- (instancetype)init:(int)type Body:(NSData*)body;
+
+- (EcgMark*)extractMark;
 
 @end

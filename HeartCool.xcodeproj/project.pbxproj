@@ -17,11 +17,14 @@
 		5A0C09861E949B9200E8693F /* AeroCardioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09851E949B9200E8693F /* AeroCardioView.m */; };
 		5A0C098C1E949D4700E8693F /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09891E949D4700E8693F /* Device.m */; };
 		5A0C098D1E949D4700E8693F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C098B1E949D4700E8693F /* User.m */; };
-		5A0C09901E94A10E00E8693F /* AppMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C098F1E94A10E00E8693F /* AppMessage.m */; };
+		5A0C09901E94A10E00E8693F /* AppMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C098F1E94A10E00E8693F /* AppMessage.mm */; };
 		5A0C09931E94A1A700E8693F /* FeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09921E94A1A700E8693F /* FeMessage.m */; };
 		5A0C09961E94A1D800E8693F /* FeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09951E94A1D800E8693F /* FeService.m */; };
 		5A0C09991E94A1E000E8693F /* AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09981E94A1E000E8693F /* AppService.m */; };
-		5A0C099C1E94D59200E8693F /* AppTxQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C099B1E94D59200E8693F /* AppTxQueue.m */; };
+		5A0C099C1E94D59200E8693F /* AppTxQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C099B1E94D59200E8693F /* AppTxQueue.mm */; };
+		5A0C09A01E94D96E00E8693F /* BlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C099F1E94D96E00E8693F /* BlockingQueue.m */; };
+		5A0C09A31E9501F100E8693F /* FeTxQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09A21E9501F100E8693F /* FeTxQueue.m */; };
+		5A0C09AA1E9504CB00E8693F /* libaerocardio_dsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C09A91E9504CB00E8693F /* libaerocardio_dsp.a */; };
 		5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A52669F1E730E2B006F2E95 /* DevicesViewController.m */; };
 		5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A21E730E84006F2E95 /* RegisterNextViewController.m */; };
 		5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A51E730ED7006F2E95 /* MainViewController.m */; };
@@ -37,7 +40,6 @@
 		5A75481C1E78569100201770 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548111E78569100201770 /* BabyRhythm.m */; };
 		5A75481D1E78569100201770 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548131E78569100201770 /* BabySpeaker.m */; };
 		5A75481E1E78569100201770 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548151E78569100201770 /* BabyToy.m */; };
-		5AACB2F21E801A18001E5ECE /* libaerocardio_dsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AACB2F11E801A18001E5ECE /* libaerocardio_dsp.a */; };
 		5AACB2F81E803871001E5ECE /* RegisterPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AACB2F71E803871001E5ECE /* RegisterPersonalViewController.m */; };
 		5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */; };
 		5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046181E7977AB0090A670 /* AFNetworkReachabilityManager.m */; };
@@ -54,6 +56,10 @@
 		5ADA32F11E68576000CADC03 /* HeartCoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */; };
 		5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA33271E68611100CADC03 /* LoginViewController.m */; };
 		5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA332A1E68612500CADC03 /* RegisterViewController.m */; };
+		5AEC6C331E951D6700C9A2F2 /* commons.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C2F1E951D6700C9A2F2 /* commons.h */; };
+		5AEC6C341E951D6700C9A2F2 /* DspEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C301E951D6700C9A2F2 /* DspEngine.h */; };
+		5AEC6C351E951D6700C9A2F2 /* Ecg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C311E951D6700C9A2F2 /* Ecg.h */; };
+		5AEC6C361E951D6700C9A2F2 /* EcgMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C321E951D6700C9A2F2 /* EcgMark.h */; };
 		5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */; };
 		5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA41E857470000F0D8E /* SAMKeychain.m */; };
 		5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA61E857470000F0D8E /* SAMKeychainQuery.m */; };
@@ -106,7 +112,7 @@
 		5A0C098A1E949D4700E8693F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		5A0C098B1E949D4700E8693F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5A0C098E1E94A10E00E8693F /* AppMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessage.h; sourceTree = "<group>"; };
-		5A0C098F1E94A10E00E8693F /* AppMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMessage.m; sourceTree = "<group>"; };
+		5A0C098F1E94A10E00E8693F /* AppMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppMessage.mm; sourceTree = "<group>"; };
 		5A0C09911E94A1A700E8693F /* FeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeMessage.h; sourceTree = "<group>"; };
 		5A0C09921E94A1A700E8693F /* FeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeMessage.m; sourceTree = "<group>"; };
 		5A0C09941E94A1D800E8693F /* FeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeService.h; sourceTree = "<group>"; };
@@ -114,7 +120,12 @@
 		5A0C09971E94A1E000E8693F /* AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
 		5A0C09981E94A1E000E8693F /* AppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppService.m; sourceTree = "<group>"; };
 		5A0C099A1E94D59200E8693F /* AppTxQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTxQueue.h; sourceTree = "<group>"; };
-		5A0C099B1E94D59200E8693F /* AppTxQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTxQueue.m; sourceTree = "<group>"; };
+		5A0C099B1E94D59200E8693F /* AppTxQueue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppTxQueue.mm; sourceTree = "<group>"; };
+		5A0C099E1E94D96E00E8693F /* BlockingQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockingQueue.h; sourceTree = "<group>"; };
+		5A0C099F1E94D96E00E8693F /* BlockingQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockingQueue.m; sourceTree = "<group>"; };
+		5A0C09A11E9501F100E8693F /* FeTxQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeTxQueue.h; sourceTree = "<group>"; };
+		5A0C09A21E9501F100E8693F /* FeTxQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeTxQueue.m; sourceTree = "<group>"; };
+		5A0C09A91E9504CB00E8693F /* libaerocardio_dsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaerocardio_dsp.a; sourceTree = "<group>"; };
 		5A52669E1E730E2B006F2E95 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
 		5A52669F1E730E2B006F2E95 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
 		5A5266A11E730E84006F2E95 /* RegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterNextViewController.h; sourceTree = "<group>"; };
@@ -145,11 +156,6 @@
 		5A7548131E78569100201770 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
 		5A7548141E78569100201770 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
 		5A7548151E78569100201770 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
-		5AACB2ED1E801A18001E5ECE /* commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commons.h; sourceTree = "<group>"; };
-		5AACB2EE1E801A18001E5ECE /* DspEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DspEngine.h; sourceTree = "<group>"; };
-		5AACB2EF1E801A18001E5ECE /* Ecg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ecg.h; sourceTree = "<group>"; };
-		5AACB2F01E801A18001E5ECE /* EcgMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcgMark.h; sourceTree = "<group>"; };
-		5AACB2F11E801A18001E5ECE /* libaerocardio_dsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaerocardio_dsp.a; sourceTree = "<group>"; };
 		5AACB2F61E803871001E5ECE /* RegisterPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterPersonalViewController.h; sourceTree = "<group>"; };
 		5AACB2F71E803871001E5ECE /* RegisterPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterPersonalViewController.m; sourceTree = "<group>"; };
 		5AC046141E7977AB0090A670 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -183,6 +189,10 @@
 		5ADA33271E68611100CADC03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5ADA33291E68612500CADC03 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		5ADA332A1E68612500CADC03 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		5AEC6C2F1E951D6700C9A2F2 /* commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commons.h; sourceTree = "<group>"; };
+		5AEC6C301E951D6700C9A2F2 /* DspEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DspEngine.h; sourceTree = "<group>"; };
+		5AEC6C311E951D6700C9A2F2 /* Ecg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ecg.h; sourceTree = "<group>"; };
+		5AEC6C321E951D6700C9A2F2 /* EcgMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcgMark.h; sourceTree = "<group>"; };
 		5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5AFCDDA31E857470000F0D8E /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
@@ -206,7 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AACB2F21E801A18001E5ECE /* libaerocardio_dsp.a in Frameworks */,
+				5A0C09AA1E9504CB00E8693F /* libaerocardio_dsp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +310,11 @@
 				5A0C09971E94A1E000E8693F /* AppService.h */,
 				5A0C09981E94A1E000E8693F /* AppService.m */,
 				5A0C099A1E94D59200E8693F /* AppTxQueue.h */,
-				5A0C099B1E94D59200E8693F /* AppTxQueue.m */,
+				5A0C099B1E94D59200E8693F /* AppTxQueue.mm */,
+				5A0C09A11E9501F100E8693F /* FeTxQueue.h */,
+				5A0C09A21E9501F100E8693F /* FeTxQueue.m */,
+				5A0C099E1E94D96E00E8693F /* BlockingQueue.h */,
+				5A0C099F1E94D96E00E8693F /* BlockingQueue.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -322,16 +336,30 @@
 				5A0C098A1E949D4700E8693F /* User.h */,
 				5A0C098B1E949D4700E8693F /* User.m */,
 				5A0C098E1E94A10E00E8693F /* AppMessage.h */,
-				5A0C098F1E94A10E00E8693F /* AppMessage.m */,
+				5A0C098F1E94A10E00E8693F /* AppMessage.mm */,
 				5A0C09911E94A1A700E8693F /* FeMessage.h */,
 				5A0C09921E94A1A700E8693F /* FeMessage.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
+		5A0C09A41E9504CB00E8693F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5AEC6C2F1E951D6700C9A2F2 /* commons.h */,
+				5AEC6C301E951D6700C9A2F2 /* DspEngine.h */,
+				5AEC6C311E951D6700C9A2F2 /* Ecg.h */,
+				5AEC6C321E951D6700C9A2F2 /* EcgMark.h */,
+				5A0C09A91E9504CB00E8693F /* libaerocardio_dsp.a */,
+			);
+			name = Library;
+			path = HeartCool/Library;
+			sourceTree = "<group>";
+		};
 		5A7548021E78568300201770 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5A0C09A41E9504CB00E8693F /* Library */,
 				5A0C094A1E94909200E8693F /* ACReuseQueue */,
 				5AFCDDA21E857470000F0D8E /* SAMKeychain */,
 				5AFD82D41E85364F00C36F30 /* SVProgressHUD */,
@@ -365,18 +393,6 @@
 			);
 			name = BabyBluetooth;
 			path = HeartCool/BabyBluetooth;
-			sourceTree = "<group>";
-		};
-		5AACB2EC1E8019C8001E5ECE /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				5AACB2ED1E801A18001E5ECE /* commons.h */,
-				5AACB2EE1E801A18001E5ECE /* DspEngine.h */,
-				5AACB2EF1E801A18001E5ECE /* Ecg.h */,
-				5AACB2F01E801A18001E5ECE /* EcgMark.h */,
-				5AACB2F11E801A18001E5ECE /* libaerocardio_dsp.a */,
-			);
-			path = Library;
 			sourceTree = "<group>";
 		};
 		5AC046131E7977AB0090A670 /* AFNetworking */ = {
@@ -431,7 +447,6 @@
 				5A0C095A1E94954300E8693F /* Module */,
 				5A0C09831E94957800E8693F /* View */,
 				5A0C09871E949BD100E8693F /* Class */,
-				5AACB2EC1E8019C8001E5ECE /* Library */,
 				5ADA32D71E68576000CADC03 /* Assets.xcassets */,
 				5ADA32D91E68576000CADC03 /* LaunchScreen.storyboard */,
 				5ADA32DC1E68576000CADC03 /* Info.plist */,
@@ -525,6 +540,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5A0C09AB1E9505A300E8693F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEC6C351E951D6700C9A2F2 /* Ecg.h in Headers */,
+				5AEC6C361E951D6700C9A2F2 /* EcgMark.h in Headers */,
+				5AEC6C341E951D6700C9A2F2 /* DspEngine.h in Headers */,
+				5AEC6C331E951D6700C9A2F2 /* commons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		5ADA32C71E68575F00CADC03 /* HeartCool */ = {
 			isa = PBXNativeTarget;
@@ -533,7 +562,7 @@
 				5ADA32C41E68575F00CADC03 /* Sources */,
 				5ADA32C51E68575F00CADC03 /* Frameworks */,
 				5ADA32C61E68575F00CADC03 /* Resources */,
-				5A0C099D1E94D72800E8693F /* ShellScript */,
+				5A0C09AB1E9505A300E8693F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -656,22 +685,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5A0C099D1E94D72800E8693F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5ADA32C41E68575F00CADC03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -679,7 +692,7 @@
 			files = (
 				5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */,
 				5A0C09991E94A1E000E8693F /* AppService.m in Sources */,
-				5A0C09901E94A10E00E8693F /* AppMessage.m in Sources */,
+				5A0C09901E94A10E00E8693F /* AppMessage.mm in Sources */,
 				5A7548171E78569100201770 /* BabyCallback.m in Sources */,
 				5AFD82E01E85364F00C36F30 /* SVProgressAnimatedView.m in Sources */,
 				5A0C098C1E949D4700E8693F /* Device.m in Sources */,
@@ -705,8 +718,9 @@
 				5A75481E1E78569100201770 /* BabyToy.m in Sources */,
 				5AACB2F81E803871001E5ECE /* RegisterPersonalViewController.m in Sources */,
 				5A75481D1E78569100201770 /* BabySpeaker.m in Sources */,
-				5A0C099C1E94D59200E8693F /* AppTxQueue.m in Sources */,
+				5A0C099C1E94D59200E8693F /* AppTxQueue.mm in Sources */,
 				5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */,
+				5A0C09A31E9501F100E8693F /* FeTxQueue.m in Sources */,
 				5AC046251E7977AB0090A670 /* AFURLResponseSerialization.m in Sources */,
 				5ADA32CD1E68576000CADC03 /* main.m in Sources */,
 				5AC046241E7977AB0090A670 /* AFURLRequestSerialization.m in Sources */,
@@ -719,6 +733,7 @@
 				5A0C097C1E94954300E8693F /* AppNetTcpInfo.m in Sources */,
 				5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */,
 				5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */,
+				5A0C09A01E94D96E00E8693F /* BlockingQueue.m in Sources */,
 				5AFD82DF1E85364F00C36F30 /* SVIndefiniteAnimatedView.m in Sources */,
 				5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */,
 				5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */,
@@ -870,32 +885,40 @@
 		5ADA32F61E68576000CADC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = HeartCool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeartCool/Library",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/HeartCool/Library/**";
 			};
 			name = Debug;
 		};
 		5ADA32F71E68576000CADC03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PN9P4WYKNB;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = HeartCool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeartCool/Library",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uteamtec.HeartCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/HeartCool/Library/**";
 			};
 			name = Release;
 		};
