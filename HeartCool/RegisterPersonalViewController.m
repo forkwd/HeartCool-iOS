@@ -2,7 +2,7 @@
 //  RegisterPersonalViewController.m
 //  HeartCool
 //
-//  Created by Windom on 2017/3/21.
+//  Created by wd on 2017/3/21.
 //  Copyright © 2017年 uteamtec. All rights reserved.
 //
 
