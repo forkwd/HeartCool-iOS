@@ -24,4 +24,16 @@
     return nil;
 }
 
+- (Device*)extractDevice {
+    return nil;
+}
+
++ (AppMessage*)createLoginMessage:(NSString*)id Key:(NSString*)key {
+    return nil;
+}
+
++ (AppMessage*)createRegMessage:(Device*)device {
+    return nil;
+}
+
 @end

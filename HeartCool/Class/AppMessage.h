@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "ACReuseQueue.h"
-
+#import "Device.h"
 #include "EcgMark.h"
 
 static int const TYPE_LOGIN = 1; //user login msg
@@ -36,5 +36,6 @@ static Byte const ACK_NO = 0x00ff;
 - (instancetype)init:(int)type Body:(NSData*)body;
 
 - (EcgMark*)extractMark;
+- (Device*)extractDevice;
 
 @end
