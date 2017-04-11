@@ -60,6 +60,7 @@
 		5AEC6C341E951D6700C9A2F2 /* DspEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C301E951D6700C9A2F2 /* DspEngine.h */; };
 		5AEC6C351E951D6700C9A2F2 /* Ecg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C311E951D6700C9A2F2 /* Ecg.h */; };
 		5AEC6C361E951D6700C9A2F2 /* EcgMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C321E951D6700C9A2F2 /* EcgMark.h */; };
+		5AF220CD1E9D18B100A66663 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AF220CC1E9D18B100A66663 /* data.txt */; };
 		5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */; };
 		5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA41E857470000F0D8E /* SAMKeychain.m */; };
 		5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA61E857470000F0D8E /* SAMKeychainQuery.m */; };
@@ -193,6 +194,7 @@
 		5AEC6C301E951D6700C9A2F2 /* DspEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DspEngine.h; sourceTree = "<group>"; };
 		5AEC6C311E951D6700C9A2F2 /* Ecg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ecg.h; sourceTree = "<group>"; };
 		5AEC6C321E951D6700C9A2F2 /* EcgMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcgMark.h; sourceTree = "<group>"; };
+		5AF220CC1E9D18B100A66663 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5AFCDDA31E857470000F0D8E /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 		5ADA32CA1E68575F00CADC03 /* HeartCool */ = {
 			isa = PBXGroup;
 			children = (
+				5AF220CC1E9D18B100A66663 /* data.txt */,
 				5ADA32CE1E68576000CADC03 /* AppDelegate.h */,
 				5ADA32CF1E68576000CADC03 /* AppDelegate.m */,
 				5ADA32D41E68576000CADC03 /* Main.storyboard */,
@@ -665,6 +668,7 @@
 				5ADA32DB1E68576000CADC03 /* LaunchScreen.storyboard in Resources */,
 				5ADA32D81E68576000CADC03 /* Assets.xcassets in Resources */,
 				5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */,
+				5AF220CD1E9D18B100A66663 /* data.txt in Resources */,
 				5AFD82E11E85364F00C36F30 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

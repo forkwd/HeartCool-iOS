@@ -13,6 +13,8 @@
 
 #import "User.h"
 
+#import "MainViewController.h"
+
 @interface LoginViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *textUsername;
@@ -66,7 +68,13 @@
 
 - (IBAction)onClickLogin:(id)sender {
     if (true) {
-        [self performSegueWithIdentifier:@"push_devices" sender:self];
+//        // 蓝牙设备列表
+//        [self performSegueWithIdentifier:@"push_devices" sender:self];
+//        return;// TODO: test
+        
+        // 主界面
+        MainViewController *next = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+        [self.navigationController pushViewController:next animated:YES];
         return;// TODO: test
     }
     [AppNetTcpUser validate:[self.textUsername text] password:[self.textPassword text] block:^(bool sucess, NSString *message, NSError *error) {
