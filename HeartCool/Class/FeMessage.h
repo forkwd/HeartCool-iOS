@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #import "ACReuseQueue.h"
+#import "User.h"
+#import "Device.h"
 
 static int const TYPE_STREAM_ECG_1 = 0; //16 bit ecg
 static int const TYPE_STREAM_ECG_3 = 1; //16 bit ecg
@@ -30,5 +32,23 @@ static int const TYPE_NULL = 0xff;
 }
 
 @property (nonatomic, copy) NSString *reuseIdentifier;
+
++ (int)getBodyLength:(int)type length:(int)streamLength resolution:(int)resolution;
+
+- (int)getType;
+- (NSData*)getBody;
+
+- (id)extractInitEcg:(User*)user time:(long)timeInit;
+
+- (id)extractEcg:(User*)user;
+
+- (id)extractMark:(long)startTime;
+
+- (Device*)extractDevice;
+
++ (FeMessage*)createRegAckMsg:(Device*)device;
++ (FeMessage*)createPulseMsg;
++ (FeMessage*)createResetMsg;
++ (FeMessage*)createMarkMsg;
 
 @end

@@ -18,13 +18,12 @@
 		5A0C098C1E949D4700E8693F /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09891E949D4700E8693F /* Device.m */; };
 		5A0C098D1E949D4700E8693F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C098B1E949D4700E8693F /* User.m */; };
 		5A0C09901E94A10E00E8693F /* AppMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C098F1E94A10E00E8693F /* AppMessage.mm */; };
-		5A0C09931E94A1A700E8693F /* FeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09921E94A1A700E8693F /* FeMessage.m */; };
+		5A0C09931E94A1A700E8693F /* FeMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09921E94A1A700E8693F /* FeMessage.mm */; };
 		5A0C09961E94A1D800E8693F /* FeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09951E94A1D800E8693F /* FeService.m */; };
 		5A0C09991E94A1E000E8693F /* AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09981E94A1E000E8693F /* AppService.m */; };
 		5A0C099C1E94D59200E8693F /* AppTxQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C099B1E94D59200E8693F /* AppTxQueue.mm */; };
 		5A0C09A01E94D96E00E8693F /* BlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C099F1E94D96E00E8693F /* BlockingQueue.m */; };
 		5A0C09A31E9501F100E8693F /* FeTxQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C09A21E9501F100E8693F /* FeTxQueue.m */; };
-		5A0C09AA1E9504CB00E8693F /* libaerocardio_dsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C09A91E9504CB00E8693F /* libaerocardio_dsp.a */; };
 		5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A52669F1E730E2B006F2E95 /* DevicesViewController.m */; };
 		5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A21E730E84006F2E95 /* RegisterNextViewController.m */; };
 		5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5266A51E730ED7006F2E95 /* MainViewController.m */; };
@@ -41,6 +40,53 @@
 		5A75481D1E78569100201770 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548131E78569100201770 /* BabySpeaker.m */; };
 		5A75481E1E78569100201770 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7548151E78569100201770 /* BabyToy.m */; };
 		5AACB2F81E803871001E5ECE /* RegisterPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AACB2F71E803871001E5ECE /* RegisterPersonalViewController.m */; };
+		5ABBDD011ECDED29003D9DA2 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8E99AD1EBCE67400F2195C /* libstdc++.tbd */; };
+		5ABBDD031ECDED38003D9DA2 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABBDD021ECDED38003D9DA2 /* libstdc++.6.tbd */; };
+		5ABBDD041ECDED3F003D9DA2 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8E99B31EBCE81300F2195C /* libstdc++.6.0.9.tbd */; };
+		5ABBDD061ECDF107003D9DA2 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBDD051ECDF107003D9DA2 /* data.txt */; };
+		5ABBDD331ECDF9F1003D9DA2 /* ABEcgCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD071ECDF9F1003D9DA2 /* ABEcgCheck.cpp */; };
+		5ABBDD341ECDF9F1003D9DA2 /* ABEcgCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD081ECDF9F1003D9DA2 /* ABEcgCheck.h */; };
+		5ABBDD351ECDF9F1003D9DA2 /* ANALBEAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD091ECDF9F1003D9DA2 /* ANALBEAT.cpp */; };
+		5ABBDD361ECDF9F1003D9DA2 /* ANALBEAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD0A1ECDF9F1003D9DA2 /* ANALBEAT.h */; };
+		5ABBDD371ECDF9F1003D9DA2 /* BaseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD0B1ECDF9F1003D9DA2 /* BaseFilter.cpp */; };
+		5ABBDD381ECDF9F1003D9DA2 /* BaseFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD0C1ECDF9F1003D9DA2 /* BaseFilter.h */; };
+		5ABBDD391ECDF9F1003D9DA2 /* BDAC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD0D1ECDF9F1003D9DA2 /* BDAC.cpp */; };
+		5ABBDD3A1ECDF9F1003D9DA2 /* BDAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD0E1ECDF9F1003D9DA2 /* BDAC.h */; };
+		5ABBDD3B1ECDF9F1003D9DA2 /* BEAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD0F1ECDF9F1003D9DA2 /* BEAT.cpp */; };
+		5ABBDD3C1ECDF9F1003D9DA2 /* BEAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD101ECDF9F1003D9DA2 /* BEAT.h */; };
+		5ABBDD3D1ECDF9F1003D9DA2 /* CLASSIFY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD111ECDF9F1003D9DA2 /* CLASSIFY.cpp */; };
+		5ABBDD3E1ECDF9F1003D9DA2 /* CLASSIFY.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD121ECDF9F1003D9DA2 /* CLASSIFY.h */; };
+		5ABBDD3F1ECDF9F1003D9DA2 /* commons.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD131ECDF9F1003D9DA2 /* commons.h */; };
+		5ABBDD401ECDF9F1003D9DA2 /* DspEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD141ECDF9F1003D9DA2 /* DspEngine.cpp */; };
+		5ABBDD411ECDF9F1003D9DA2 /* DspEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD151ECDF9F1003D9DA2 /* DspEngine.h */; };
+		5ABBDD421ECDF9F1003D9DA2 /* Ecg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD161ECDF9F1003D9DA2 /* Ecg.cpp */; };
+		5ABBDD431ECDF9F1003D9DA2 /* Ecg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD171ECDF9F1003D9DA2 /* Ecg.h */; };
+		5ABBDD441ECDF9F1003D9DA2 /* ECGCODES.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD181ECDF9F1003D9DA2 /* ECGCODES.h */; };
+		5ABBDD451ECDF9F1003D9DA2 /* EcgMark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD191ECDF9F1003D9DA2 /* EcgMark.cpp */; };
+		5ABBDD461ECDF9F1003D9DA2 /* EcgMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD1A1ECDF9F1003D9DA2 /* EcgMark.h */; };
+		5ABBDD471ECDF9F1003D9DA2 /* FIBDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD1B1ECDF9F1003D9DA2 /* FIBDetect.cpp */; };
+		5ABBDD481ECDF9F1003D9DA2 /* FIBDetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD1C1ECDF9F1003D9DA2 /* FIBDetect.h */; };
+		5ABBDD491ECDF9F1003D9DA2 /* HRCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD1D1ECDF9F1003D9DA2 /* HRCheck.cpp */; };
+		5ABBDD4A1ECDF9F1003D9DA2 /* HRCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD1E1ECDF9F1003D9DA2 /* HRCheck.h */; };
+		5ABBDD4C1ECDF9F1003D9DA2 /* MATCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD201ECDF9F1003D9DA2 /* MATCH.cpp */; };
+		5ABBDD4D1ECDF9F1003D9DA2 /* MATCH.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD211ECDF9F1003D9DA2 /* MATCH.h */; };
+		5ABBDD4E1ECDF9F1003D9DA2 /* NOISECHK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD221ECDF9F1003D9DA2 /* NOISECHK.cpp */; };
+		5ABBDD4F1ECDF9F1003D9DA2 /* NOISECHY.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD231ECDF9F1003D9DA2 /* NOISECHY.h */; };
+		5ABBDD501ECDF9F1003D9DA2 /* PafDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD241ECDF9F1003D9DA2 /* PafDetect.cpp */; };
+		5ABBDD511ECDF9F1003D9DA2 /* PafDetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD251ECDF9F1003D9DA2 /* PafDetect.h */; };
+		5ABBDD521ECDF9F1003D9DA2 /* POSTCLAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD261ECDF9F1003D9DA2 /* POSTCLAS.cpp */; };
+		5ABBDD531ECDF9F1003D9DA2 /* POSTCLAS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD271ECDF9F1003D9DA2 /* POSTCLAS.h */; };
+		5ABBDD541ECDF9F1003D9DA2 /* QRSDET.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD281ECDF9F1003D9DA2 /* QRSDET.h */; };
+		5ABBDD551ECDF9F1003D9DA2 /* QRSDET2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD291ECDF9F1003D9DA2 /* QRSDET2.cpp */; };
+		5ABBDD561ECDF9F1003D9DA2 /* QRSFILT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD2A1ECDF9F1003D9DA2 /* QRSFILT.cpp */; };
+		5ABBDD571ECDF9F1003D9DA2 /* QRSFILT.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD2B1ECDF9F1003D9DA2 /* QRSFILT.h */; };
+		5ABBDD581ECDF9F1003D9DA2 /* RYTHMCHK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD2C1ECDF9F1003D9DA2 /* RYTHMCHK.cpp */; };
+		5ABBDD591ECDF9F1003D9DA2 /* RYTHMCHK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD2D1ECDF9F1003D9DA2 /* RYTHMCHK.h */; };
+		5ABBDD5A1ECDF9F1003D9DA2 /* VFdetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD2E1ECDF9F1003D9DA2 /* VFdetect.cpp */; };
+		5ABBDD5B1ECDF9F1003D9DA2 /* VFdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD2F1ECDF9F1003D9DA2 /* VFdetect.h */; };
+		5ABBDD5C1ECDF9F1003D9DA2 /* WAVEFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD301ECDF9F1003D9DA2 /* WAVEFilter.cpp */; };
+		5ABBDD5D1ECDF9F1003D9DA2 /* WAVEFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD311ECDF9F1003D9DA2 /* WAVEFilter.h */; };
+		5ABBDD5E1ECDF9F1003D9DA2 /* WAVEPARA.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD321ECDF9F1003D9DA2 /* WAVEPARA.h */; };
 		5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */; };
 		5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046181E7977AB0090A670 /* AFNetworkReachabilityManager.m */; };
 		5AC046231E7977AB0090A670 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461A1E7977AB0090A670 /* AFSecurityPolicy.m */; };
@@ -56,11 +102,6 @@
 		5ADA32F11E68576000CADC03 /* HeartCoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA32F01E68576000CADC03 /* HeartCoolUITests.m */; };
 		5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA33271E68611100CADC03 /* LoginViewController.m */; };
 		5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA332A1E68612500CADC03 /* RegisterViewController.m */; };
-		5AEC6C331E951D6700C9A2F2 /* commons.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C2F1E951D6700C9A2F2 /* commons.h */; };
-		5AEC6C341E951D6700C9A2F2 /* DspEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C301E951D6700C9A2F2 /* DspEngine.h */; };
-		5AEC6C351E951D6700C9A2F2 /* Ecg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C311E951D6700C9A2F2 /* Ecg.h */; };
-		5AEC6C361E951D6700C9A2F2 /* EcgMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC6C321E951D6700C9A2F2 /* EcgMark.h */; };
-		5AF220CD1E9D18B100A66663 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AF220CC1E9D18B100A66663 /* data.txt */; };
 		5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */; };
 		5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA41E857470000F0D8E /* SAMKeychain.m */; };
 		5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCDDA61E857470000F0D8E /* SAMKeychainQuery.m */; };
@@ -115,7 +156,7 @@
 		5A0C098E1E94A10E00E8693F /* AppMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessage.h; sourceTree = "<group>"; };
 		5A0C098F1E94A10E00E8693F /* AppMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppMessage.mm; sourceTree = "<group>"; };
 		5A0C09911E94A1A700E8693F /* FeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeMessage.h; sourceTree = "<group>"; };
-		5A0C09921E94A1A700E8693F /* FeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeMessage.m; sourceTree = "<group>"; };
+		5A0C09921E94A1A700E8693F /* FeMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FeMessage.mm; sourceTree = "<group>"; };
 		5A0C09941E94A1D800E8693F /* FeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeService.h; sourceTree = "<group>"; };
 		5A0C09951E94A1D800E8693F /* FeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeService.m; sourceTree = "<group>"; };
 		5A0C09971E94A1E000E8693F /* AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
@@ -126,7 +167,6 @@
 		5A0C099F1E94D96E00E8693F /* BlockingQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockingQueue.m; sourceTree = "<group>"; };
 		5A0C09A11E9501F100E8693F /* FeTxQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeTxQueue.h; sourceTree = "<group>"; };
 		5A0C09A21E9501F100E8693F /* FeTxQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeTxQueue.m; sourceTree = "<group>"; };
-		5A0C09A91E9504CB00E8693F /* libaerocardio_dsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaerocardio_dsp.a; sourceTree = "<group>"; };
 		5A52669E1E730E2B006F2E95 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
 		5A52669F1E730E2B006F2E95 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
 		5A5266A11E730E84006F2E95 /* RegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterNextViewController.h; sourceTree = "<group>"; };
@@ -157,8 +197,58 @@
 		5A7548131E78569100201770 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
 		5A7548141E78569100201770 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
 		5A7548151E78569100201770 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		5A8E99AB1EBCE3DA00F2195C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5A8E99AD1EBCE67400F2195C /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		5A8E99AF1EBCE67C00F2195C /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		5A8E99B11EBCE68300F2195C /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		5A8E99B31EBCE81300F2195C /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		5AACB2F61E803871001E5ECE /* RegisterPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterPersonalViewController.h; sourceTree = "<group>"; };
 		5AACB2F71E803871001E5ECE /* RegisterPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterPersonalViewController.m; sourceTree = "<group>"; };
+		5ABBDD021ECDED38003D9DA2 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		5ABBDD051ECDF107003D9DA2 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		5ABBDD071ECDF9F1003D9DA2 /* ABEcgCheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ABEcgCheck.cpp; sourceTree = "<group>"; };
+		5ABBDD081ECDF9F1003D9DA2 /* ABEcgCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABEcgCheck.h; sourceTree = "<group>"; };
+		5ABBDD091ECDF9F1003D9DA2 /* ANALBEAT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ANALBEAT.cpp; sourceTree = "<group>"; };
+		5ABBDD0A1ECDF9F1003D9DA2 /* ANALBEAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANALBEAT.h; sourceTree = "<group>"; };
+		5ABBDD0B1ECDF9F1003D9DA2 /* BaseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseFilter.cpp; sourceTree = "<group>"; };
+		5ABBDD0C1ECDF9F1003D9DA2 /* BaseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFilter.h; sourceTree = "<group>"; };
+		5ABBDD0D1ECDF9F1003D9DA2 /* BDAC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BDAC.cpp; sourceTree = "<group>"; };
+		5ABBDD0E1ECDF9F1003D9DA2 /* BDAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAC.h; sourceTree = "<group>"; };
+		5ABBDD0F1ECDF9F1003D9DA2 /* BEAT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BEAT.cpp; sourceTree = "<group>"; };
+		5ABBDD101ECDF9F1003D9DA2 /* BEAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAT.h; sourceTree = "<group>"; };
+		5ABBDD111ECDF9F1003D9DA2 /* CLASSIFY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLASSIFY.cpp; sourceTree = "<group>"; };
+		5ABBDD121ECDF9F1003D9DA2 /* CLASSIFY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLASSIFY.h; sourceTree = "<group>"; };
+		5ABBDD131ECDF9F1003D9DA2 /* commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commons.h; sourceTree = "<group>"; };
+		5ABBDD141ECDF9F1003D9DA2 /* DspEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DspEngine.cpp; sourceTree = "<group>"; };
+		5ABBDD151ECDF9F1003D9DA2 /* DspEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DspEngine.h; sourceTree = "<group>"; };
+		5ABBDD161ECDF9F1003D9DA2 /* Ecg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ecg.cpp; sourceTree = "<group>"; };
+		5ABBDD171ECDF9F1003D9DA2 /* Ecg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ecg.h; sourceTree = "<group>"; };
+		5ABBDD181ECDF9F1003D9DA2 /* ECGCODES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGCODES.h; sourceTree = "<group>"; };
+		5ABBDD191ECDF9F1003D9DA2 /* EcgMark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EcgMark.cpp; sourceTree = "<group>"; };
+		5ABBDD1A1ECDF9F1003D9DA2 /* EcgMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcgMark.h; sourceTree = "<group>"; };
+		5ABBDD1B1ECDF9F1003D9DA2 /* FIBDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIBDetect.cpp; sourceTree = "<group>"; };
+		5ABBDD1C1ECDF9F1003D9DA2 /* FIBDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBDetect.h; sourceTree = "<group>"; };
+		5ABBDD1D1ECDF9F1003D9DA2 /* HRCheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HRCheck.cpp; sourceTree = "<group>"; };
+		5ABBDD1E1ECDF9F1003D9DA2 /* HRCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCheck.h; sourceTree = "<group>"; };
+		5ABBDD201ECDF9F1003D9DA2 /* MATCH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MATCH.cpp; sourceTree = "<group>"; };
+		5ABBDD211ECDF9F1003D9DA2 /* MATCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATCH.h; sourceTree = "<group>"; };
+		5ABBDD221ECDF9F1003D9DA2 /* NOISECHK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NOISECHK.cpp; sourceTree = "<group>"; };
+		5ABBDD231ECDF9F1003D9DA2 /* NOISECHY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NOISECHY.h; sourceTree = "<group>"; };
+		5ABBDD241ECDF9F1003D9DA2 /* PafDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PafDetect.cpp; sourceTree = "<group>"; };
+		5ABBDD251ECDF9F1003D9DA2 /* PafDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PafDetect.h; sourceTree = "<group>"; };
+		5ABBDD261ECDF9F1003D9DA2 /* POSTCLAS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = POSTCLAS.cpp; sourceTree = "<group>"; };
+		5ABBDD271ECDF9F1003D9DA2 /* POSTCLAS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSTCLAS.h; sourceTree = "<group>"; };
+		5ABBDD281ECDF9F1003D9DA2 /* QRSDET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRSDET.h; sourceTree = "<group>"; };
+		5ABBDD291ECDF9F1003D9DA2 /* QRSDET2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QRSDET2.cpp; sourceTree = "<group>"; };
+		5ABBDD2A1ECDF9F1003D9DA2 /* QRSFILT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QRSFILT.cpp; sourceTree = "<group>"; };
+		5ABBDD2B1ECDF9F1003D9DA2 /* QRSFILT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRSFILT.h; sourceTree = "<group>"; };
+		5ABBDD2C1ECDF9F1003D9DA2 /* RYTHMCHK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RYTHMCHK.cpp; sourceTree = "<group>"; };
+		5ABBDD2D1ECDF9F1003D9DA2 /* RYTHMCHK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTHMCHK.h; sourceTree = "<group>"; };
+		5ABBDD2E1ECDF9F1003D9DA2 /* VFdetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VFdetect.cpp; sourceTree = "<group>"; };
+		5ABBDD2F1ECDF9F1003D9DA2 /* VFdetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFdetect.h; sourceTree = "<group>"; };
+		5ABBDD301ECDF9F1003D9DA2 /* WAVEFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WAVEFilter.cpp; sourceTree = "<group>"; };
+		5ABBDD311ECDF9F1003D9DA2 /* WAVEFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAVEFilter.h; sourceTree = "<group>"; };
+		5ABBDD321ECDF9F1003D9DA2 /* WAVEPARA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAVEPARA.h; sourceTree = "<group>"; };
 		5AC046141E7977AB0090A670 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		5AC046161E7977AB0090A670 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -190,11 +280,6 @@
 		5ADA33271E68611100CADC03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5ADA33291E68612500CADC03 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		5ADA332A1E68612500CADC03 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		5AEC6C2F1E951D6700C9A2F2 /* commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commons.h; sourceTree = "<group>"; };
-		5AEC6C301E951D6700C9A2F2 /* DspEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DspEngine.h; sourceTree = "<group>"; };
-		5AEC6C311E951D6700C9A2F2 /* Ecg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ecg.h; sourceTree = "<group>"; };
-		5AEC6C321E951D6700C9A2F2 /* EcgMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcgMark.h; sourceTree = "<group>"; };
-		5AF220CC1E9D18B100A66663 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		5AF2C69E1E76FCDC007511F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		5AF2C69F1E76FCDC007511F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5AFCDDA31E857470000F0D8E /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
@@ -218,7 +303,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0C09AA1E9504CB00E8693F /* libaerocardio_dsp.a in Frameworks */,
+				5ABBDD041ECDED3F003D9DA2 /* libstdc++.6.0.9.tbd in Frameworks */,
+				5ABBDD031ECDED38003D9DA2 /* libstdc++.6.tbd in Frameworks */,
+				5ABBDD011ECDED29003D9DA2 /* libstdc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +427,7 @@
 				5A0C098E1E94A10E00E8693F /* AppMessage.h */,
 				5A0C098F1E94A10E00E8693F /* AppMessage.mm */,
 				5A0C09911E94A1A700E8693F /* FeMessage.h */,
-				5A0C09921E94A1A700E8693F /* FeMessage.m */,
+				5A0C09921E94A1A700E8693F /* FeMessage.mm */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -348,11 +435,49 @@
 		5A0C09A41E9504CB00E8693F /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				5AEC6C2F1E951D6700C9A2F2 /* commons.h */,
-				5AEC6C301E951D6700C9A2F2 /* DspEngine.h */,
-				5AEC6C311E951D6700C9A2F2 /* Ecg.h */,
-				5AEC6C321E951D6700C9A2F2 /* EcgMark.h */,
-				5A0C09A91E9504CB00E8693F /* libaerocardio_dsp.a */,
+				5ABBDD071ECDF9F1003D9DA2 /* ABEcgCheck.cpp */,
+				5ABBDD081ECDF9F1003D9DA2 /* ABEcgCheck.h */,
+				5ABBDD091ECDF9F1003D9DA2 /* ANALBEAT.cpp */,
+				5ABBDD0A1ECDF9F1003D9DA2 /* ANALBEAT.h */,
+				5ABBDD0B1ECDF9F1003D9DA2 /* BaseFilter.cpp */,
+				5ABBDD0C1ECDF9F1003D9DA2 /* BaseFilter.h */,
+				5ABBDD0D1ECDF9F1003D9DA2 /* BDAC.cpp */,
+				5ABBDD0E1ECDF9F1003D9DA2 /* BDAC.h */,
+				5ABBDD0F1ECDF9F1003D9DA2 /* BEAT.cpp */,
+				5ABBDD101ECDF9F1003D9DA2 /* BEAT.h */,
+				5ABBDD111ECDF9F1003D9DA2 /* CLASSIFY.cpp */,
+				5ABBDD121ECDF9F1003D9DA2 /* CLASSIFY.h */,
+				5ABBDD131ECDF9F1003D9DA2 /* commons.h */,
+				5ABBDD141ECDF9F1003D9DA2 /* DspEngine.cpp */,
+				5ABBDD151ECDF9F1003D9DA2 /* DspEngine.h */,
+				5ABBDD161ECDF9F1003D9DA2 /* Ecg.cpp */,
+				5ABBDD171ECDF9F1003D9DA2 /* Ecg.h */,
+				5ABBDD181ECDF9F1003D9DA2 /* ECGCODES.h */,
+				5ABBDD191ECDF9F1003D9DA2 /* EcgMark.cpp */,
+				5ABBDD1A1ECDF9F1003D9DA2 /* EcgMark.h */,
+				5ABBDD1B1ECDF9F1003D9DA2 /* FIBDetect.cpp */,
+				5ABBDD1C1ECDF9F1003D9DA2 /* FIBDetect.h */,
+				5ABBDD1D1ECDF9F1003D9DA2 /* HRCheck.cpp */,
+				5ABBDD1E1ECDF9F1003D9DA2 /* HRCheck.h */,
+				5ABBDD201ECDF9F1003D9DA2 /* MATCH.cpp */,
+				5ABBDD211ECDF9F1003D9DA2 /* MATCH.h */,
+				5ABBDD221ECDF9F1003D9DA2 /* NOISECHK.cpp */,
+				5ABBDD231ECDF9F1003D9DA2 /* NOISECHY.h */,
+				5ABBDD241ECDF9F1003D9DA2 /* PafDetect.cpp */,
+				5ABBDD251ECDF9F1003D9DA2 /* PafDetect.h */,
+				5ABBDD261ECDF9F1003D9DA2 /* POSTCLAS.cpp */,
+				5ABBDD271ECDF9F1003D9DA2 /* POSTCLAS.h */,
+				5ABBDD281ECDF9F1003D9DA2 /* QRSDET.h */,
+				5ABBDD291ECDF9F1003D9DA2 /* QRSDET2.cpp */,
+				5ABBDD2A1ECDF9F1003D9DA2 /* QRSFILT.cpp */,
+				5ABBDD2B1ECDF9F1003D9DA2 /* QRSFILT.h */,
+				5ABBDD2C1ECDF9F1003D9DA2 /* RYTHMCHK.cpp */,
+				5ABBDD2D1ECDF9F1003D9DA2 /* RYTHMCHK.h */,
+				5ABBDD2E1ECDF9F1003D9DA2 /* VFdetect.cpp */,
+				5ABBDD2F1ECDF9F1003D9DA2 /* VFdetect.h */,
+				5ABBDD301ECDF9F1003D9DA2 /* WAVEFilter.cpp */,
+				5ABBDD311ECDF9F1003D9DA2 /* WAVEFilter.h */,
+				5ABBDD321ECDF9F1003D9DA2 /* WAVEPARA.h */,
 			);
 			name = Library;
 			path = HeartCool/Library;
@@ -397,6 +522,19 @@
 			path = HeartCool/BabyBluetooth;
 			sourceTree = "<group>";
 		};
+		5A8E99AA1EBCE3DA00F2195C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ABBDD021ECDED38003D9DA2 /* libstdc++.6.tbd */,
+				5A8E99B31EBCE81300F2195C /* libstdc++.6.0.9.tbd */,
+				5A8E99B11EBCE68300F2195C /* libc++abi.tbd */,
+				5A8E99AF1EBCE67C00F2195C /* libc++.1.tbd */,
+				5A8E99AD1EBCE67400F2195C /* libstdc++.tbd */,
+				5A8E99AB1EBCE3DA00F2195C /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5AC046131E7977AB0090A670 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +564,7 @@
 				5ADA32E41E68576000CADC03 /* HeartCoolTests */,
 				5ADA32EF1E68576000CADC03 /* HeartCoolUITests */,
 				5ADA32C91E68575F00CADC03 /* Products */,
+				5A8E99AA1EBCE3DA00F2195C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -442,7 +581,7 @@
 		5ADA32CA1E68575F00CADC03 /* HeartCool */ = {
 			isa = PBXGroup;
 			children = (
-				5AF220CC1E9D18B100A66663 /* data.txt */,
+				5ABBDD051ECDF107003D9DA2 /* data.txt */,
 				5ADA32CE1E68576000CADC03 /* AppDelegate.h */,
 				5ADA32CF1E68576000CADC03 /* AppDelegate.m */,
 				5ADA32D41E68576000CADC03 /* Main.storyboard */,
@@ -548,10 +687,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AEC6C351E951D6700C9A2F2 /* Ecg.h in Headers */,
-				5AEC6C361E951D6700C9A2F2 /* EcgMark.h in Headers */,
-				5AEC6C341E951D6700C9A2F2 /* DspEngine.h in Headers */,
-				5AEC6C331E951D6700C9A2F2 /* commons.h in Headers */,
+				5ABBDD5E1ECDF9F1003D9DA2 /* WAVEPARA.h in Headers */,
+				5ABBDD3C1ECDF9F1003D9DA2 /* BEAT.h in Headers */,
+				5ABBDD541ECDF9F1003D9DA2 /* QRSDET.h in Headers */,
+				5ABBDD511ECDF9F1003D9DA2 /* PafDetect.h in Headers */,
+				5ABBDD381ECDF9F1003D9DA2 /* BaseFilter.h in Headers */,
+				5ABBDD4A1ECDF9F1003D9DA2 /* HRCheck.h in Headers */,
+				5ABBDD361ECDF9F1003D9DA2 /* ANALBEAT.h in Headers */,
+				5ABBDD591ECDF9F1003D9DA2 /* RYTHMCHK.h in Headers */,
+				5ABBDD431ECDF9F1003D9DA2 /* Ecg.h in Headers */,
+				5ABBDD3A1ECDF9F1003D9DA2 /* BDAC.h in Headers */,
+				5ABBDD441ECDF9F1003D9DA2 /* ECGCODES.h in Headers */,
+				5ABBDD3E1ECDF9F1003D9DA2 /* CLASSIFY.h in Headers */,
+				5ABBDD3F1ECDF9F1003D9DA2 /* commons.h in Headers */,
+				5ABBDD411ECDF9F1003D9DA2 /* DspEngine.h in Headers */,
+				5ABBDD5D1ECDF9F1003D9DA2 /* WAVEFilter.h in Headers */,
+				5ABBDD4D1ECDF9F1003D9DA2 /* MATCH.h in Headers */,
+				5ABBDD4F1ECDF9F1003D9DA2 /* NOISECHY.h in Headers */,
+				5ABBDD341ECDF9F1003D9DA2 /* ABEcgCheck.h in Headers */,
+				5ABBDD5B1ECDF9F1003D9DA2 /* VFdetect.h in Headers */,
+				5ABBDD461ECDF9F1003D9DA2 /* EcgMark.h in Headers */,
+				5ABBDD481ECDF9F1003D9DA2 /* FIBDetect.h in Headers */,
+				5ABBDD531ECDF9F1003D9DA2 /* POSTCLAS.h in Headers */,
+				5ABBDD571ECDF9F1003D9DA2 /* QRSFILT.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,8 +826,8 @@
 				5ADA32DB1E68576000CADC03 /* LaunchScreen.storyboard in Resources */,
 				5ADA32D81E68576000CADC03 /* Assets.xcassets in Resources */,
 				5ADA32D61E68576000CADC03 /* Main.storyboard in Resources */,
-				5AF220CD1E9D18B100A66663 /* data.txt in Resources */,
 				5AFD82E11E85364F00C36F30 /* SVProgressHUD.bundle in Resources */,
+				5ABBDD061ECDF107003D9DA2 /* data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,52 +855,72 @@
 				5A5266A31E730E84006F2E95 /* RegisterNextViewController.m in Sources */,
 				5A0C09991E94A1E000E8693F /* AppService.m in Sources */,
 				5A0C09901E94A10E00E8693F /* AppMessage.mm in Sources */,
+				5ABBDD3D1ECDF9F1003D9DA2 /* CLASSIFY.cpp in Sources */,
 				5A7548171E78569100201770 /* BabyCallback.m in Sources */,
+				5ABBDD501ECDF9F1003D9DA2 /* PafDetect.cpp in Sources */,
 				5AFD82E01E85364F00C36F30 /* SVProgressAnimatedView.m in Sources */,
 				5A0C098C1E949D4700E8693F /* Device.m in Sources */,
+				5ABBDD521ECDF9F1003D9DA2 /* POSTCLAS.cpp in Sources */,
+				5ABBDD551ECDF9F1003D9DA2 /* QRSDET2.cpp in Sources */,
 				5AC046231E7977AB0090A670 /* AFSecurityPolicy.m in Sources */,
-				5A0C09931E94A1A700E8693F /* FeMessage.m in Sources */,
+				5A0C09931E94A1A700E8693F /* FeMessage.mm in Sources */,
 				5A75481A1E78569100201770 /* BabyOptions.m in Sources */,
 				5AFD82E21E85364F00C36F30 /* SVProgressHUD.m in Sources */,
 				5ADA32D01E68576000CADC03 /* AppDelegate.m in Sources */,
 				5A75481B1E78569100201770 /* BabyPeripheralManager.m in Sources */,
+				5ABBDD4C1ECDF9F1003D9DA2 /* MATCH.cpp in Sources */,
 				5A5266AF1E731716006F2E95 /* ForgotNextViewController.m in Sources */,
 				5AFCDDA81E857470000F0D8E /* SAMKeychainQuery.m in Sources */,
+				5ABBDD4E1ECDF9F1003D9DA2 /* NOISECHK.cpp in Sources */,
 				5A0C098D1E949D4700E8693F /* User.m in Sources */,
+				5ABBDD491ECDF9F1003D9DA2 /* HRCheck.cpp in Sources */,
+				5ABBDD331ECDF9F1003D9DA2 /* ABEcgCheck.cpp in Sources */,
 				5A5266AC1E7316B8006F2E95 /* ForgotViewController.m in Sources */,
 				5A0C094F1E94909200E8693F /* ACReuseQueue.m in Sources */,
 				5A0C097E1E94954300E8693F /* AppNetTcpUser.m in Sources */,
 				5A75481C1E78569100201770 /* BabyRhythm.m in Sources */,
 				5AFCDDA71E857470000F0D8E /* SAMKeychain.m in Sources */,
+				5ABBDD561ECDF9F1003D9DA2 /* QRSFILT.cpp in Sources */,
 				5AFD82E31E85364F00C36F30 /* SVRadialGradientLayer.m in Sources */,
 				5A7548181E78569100201770 /* BabyCentralManager.m in Sources */,
 				5A7548191E78569100201770 /* BabyDefine.m in Sources */,
 				5A0C09861E949B9200E8693F /* AeroCardioView.m in Sources */,
 				5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */,
 				5A75481E1E78569100201770 /* BabyToy.m in Sources */,
+				5ABBDD471ECDF9F1003D9DA2 /* FIBDetect.cpp in Sources */,
+				5ABBDD391ECDF9F1003D9DA2 /* BDAC.cpp in Sources */,
 				5AACB2F81E803871001E5ECE /* RegisterPersonalViewController.m in Sources */,
 				5A75481D1E78569100201770 /* BabySpeaker.m in Sources */,
 				5A0C099C1E94D59200E8693F /* AppTxQueue.mm in Sources */,
 				5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */,
 				5A0C09A31E9501F100E8693F /* FeTxQueue.m in Sources */,
 				5AC046251E7977AB0090A670 /* AFURLResponseSerialization.m in Sources */,
+				5ABBDD451ECDF9F1003D9DA2 /* EcgMark.cpp in Sources */,
+				5ABBDD3B1ECDF9F1003D9DA2 /* BEAT.cpp in Sources */,
 				5ADA32CD1E68576000CADC03 /* main.m in Sources */,
 				5AC046241E7977AB0090A670 /* AFURLRequestSerialization.m in Sources */,
 				5A0C097D1E94954300E8693F /* AppNetTcpSms.m in Sources */,
+				5ABBDD421ECDF9F1003D9DA2 /* Ecg.cpp in Sources */,
 				5ADA33281E68611100CADC03 /* LoginViewController.m in Sources */,
 				5A7548161E78569100201770 /* BabyBluetooth.m in Sources */,
 				5A0C097B1E94954300E8693F /* StringValidator.m in Sources */,
 				5A0C09781E94954300E8693F /* KeychainStore.m in Sources */,
+				5ABBDD5C1ECDF9F1003D9DA2 /* WAVEFilter.cpp in Sources */,
 				5A0C097F1E94954300E8693F /* HttpAPIClient.m in Sources */,
+				5ABBDD401ECDF9F1003D9DA2 /* DspEngine.cpp in Sources */,
+				5ABBDD351ECDF9F1003D9DA2 /* ANALBEAT.cpp in Sources */,
 				5A0C097C1E94954300E8693F /* AppNetTcpInfo.m in Sources */,
+				5ABBDD581ECDF9F1003D9DA2 /* RYTHMCHK.cpp in Sources */,
 				5A5266A61E730ED7006F2E95 /* MainViewController.m in Sources */,
 				5A5266A91E731440006F2E95 /* WelcomeViewController.m in Sources */,
 				5A0C09A01E94D96E00E8693F /* BlockingQueue.m in Sources */,
 				5AFD82DF1E85364F00C36F30 /* SVIndefiniteAnimatedView.m in Sources */,
 				5AF2C6A01E76FCDC007511F5 /* AboutViewController.m in Sources */,
+				5ABBDD5A1ECDF9F1003D9DA2 /* VFdetect.cpp in Sources */,
 				5A5266A01E730E2B006F2E95 /* DevicesViewController.m in Sources */,
 				5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */,
 				5ADA332B1E68612500CADC03 /* RegisterViewController.m in Sources */,
+				5ABBDD371ECDF9F1003D9DA2 /* BaseFilter.cpp in Sources */,
 				5A0C09961E94A1D800E8693F /* FeService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

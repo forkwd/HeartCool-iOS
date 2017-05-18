@@ -10,7 +10,6 @@
 
 #import "ACReuseQueue.h"
 #import "Device.h"
-#include "EcgMark.h"
 
 static int const TYPE_LOGIN = 1; //user login msg
 static int const TYPE_LOGIN_ACK = 2; //user login msg ack
@@ -35,7 +34,7 @@ static Byte const ACK_NO = 0x00ff;
 
 - (instancetype)init:(int)type Body:(NSData*)body;
 
-- (EcgMark*)extractMark;
+- (id)extractMark;
 - (Device*)extractDevice;
 
 @end

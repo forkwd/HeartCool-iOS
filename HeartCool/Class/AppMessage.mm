@@ -20,7 +20,7 @@
     return self;
 }
 
-- (EcgMark*)extractMark {
+- (id)extractMark {
     return nil;
 }
 
