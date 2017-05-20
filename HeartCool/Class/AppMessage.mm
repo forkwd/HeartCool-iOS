@@ -21,6 +21,8 @@
 }
 
 - (id)extractMark {
+    if (self->type == TYPE_MARK) {
+    }
     return nil;
 }
 

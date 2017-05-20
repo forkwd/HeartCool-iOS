@@ -87,6 +87,8 @@
 		5ABBDD5C1ECDF9F1003D9DA2 /* WAVEFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD301ECDF9F1003D9DA2 /* WAVEFilter.cpp */; };
 		5ABBDD5D1ECDF9F1003D9DA2 /* WAVEFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD311ECDF9F1003D9DA2 /* WAVEFilter.h */; };
 		5ABBDD5E1ECDF9F1003D9DA2 /* WAVEPARA.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD321ECDF9F1003D9DA2 /* WAVEPARA.h */; };
+		5ABBDD611ECDFC20003D9DA2 /* MessageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABBDD5F1ECDFC20003D9DA2 /* MessageUtils.h */; };
+		5ABBDD621ECDFC20003D9DA2 /* MessageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBDD601ECDFC20003D9DA2 /* MessageUtils.m */; };
 		5AC046211E7977AB0090A670 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */; };
 		5AC046221E7977AB0090A670 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC046181E7977AB0090A670 /* AFNetworkReachabilityManager.m */; };
 		5AC046231E7977AB0090A670 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC0461A1E7977AB0090A670 /* AFSecurityPolicy.m */; };
@@ -249,6 +251,8 @@
 		5ABBDD301ECDF9F1003D9DA2 /* WAVEFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WAVEFilter.cpp; sourceTree = "<group>"; };
 		5ABBDD311ECDF9F1003D9DA2 /* WAVEFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAVEFilter.h; sourceTree = "<group>"; };
 		5ABBDD321ECDF9F1003D9DA2 /* WAVEPARA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAVEPARA.h; sourceTree = "<group>"; };
+		5ABBDD5F1ECDFC20003D9DA2 /* MessageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageUtils.h; sourceTree = "<group>"; };
+		5ABBDD601ECDFC20003D9DA2 /* MessageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageUtils.m; sourceTree = "<group>"; };
 		5AC046141E7977AB0090A670 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		5AC046151E7977AB0090A670 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		5AC046161E7977AB0090A670 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -428,6 +432,8 @@
 				5A0C098F1E94A10E00E8693F /* AppMessage.mm */,
 				5A0C09911E94A1A700E8693F /* FeMessage.h */,
 				5A0C09921E94A1A700E8693F /* FeMessage.mm */,
+				5ABBDD5F1ECDFC20003D9DA2 /* MessageUtils.h */,
+				5ABBDD601ECDFC20003D9DA2 /* MessageUtils.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -697,6 +703,7 @@
 				5ABBDD591ECDF9F1003D9DA2 /* RYTHMCHK.h in Headers */,
 				5ABBDD431ECDF9F1003D9DA2 /* Ecg.h in Headers */,
 				5ABBDD3A1ECDF9F1003D9DA2 /* BDAC.h in Headers */,
+				5ABBDD611ECDFC20003D9DA2 /* MessageUtils.h in Headers */,
 				5ABBDD441ECDF9F1003D9DA2 /* ECGCODES.h in Headers */,
 				5ABBDD3E1ECDF9F1003D9DA2 /* CLASSIFY.h in Headers */,
 				5ABBDD3F1ECDF9F1003D9DA2 /* commons.h in Headers */,
@@ -884,6 +891,7 @@
 				5AFD82E31E85364F00C36F30 /* SVRadialGradientLayer.m in Sources */,
 				5A7548181E78569100201770 /* BabyCentralManager.m in Sources */,
 				5A7548191E78569100201770 /* BabyDefine.m in Sources */,
+				5ABBDD621ECDFC20003D9DA2 /* MessageUtils.m in Sources */,
 				5A0C09861E949B9200E8693F /* AeroCardioView.m in Sources */,
 				5AC046261E7977AB0090A670 /* AFURLSessionManager.m in Sources */,
 				5A75481E1E78569100201770 /* BabyToy.m in Sources */,
