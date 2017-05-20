@@ -26,6 +26,7 @@
     
     [PointContainer setMaxContainerCapacity:(int)(CGRectGetWidth(self.ecgView.frame))];
     
+    // load data
     void (^createData)(void) = ^{
         NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
         
@@ -57,7 +58,7 @@
 
 
 #pragma mark -
-#pragma mark - 哟
+#pragma mark - 绘制
 
 - (void)createWorkDataSourceWithTimeInterval:(NSTimeInterval )timeInterval
 {
@@ -65,25 +66,18 @@
     [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(timerTranslationFun) userInfo:nil repeats:YES];
 }
 
-//刷新方式绘制
+// 刷新方式绘制
 - (void)timerRefresnFun
 {
     [[PointContainer sharedContainer] addPointAsRefreshChangeform:[self bubbleRefreshPoint]];
 }
 
-//平移方式绘制
+// 平移方式绘制
 - (void)timerTranslationFun
 {
     [[PointContainer sharedContainer] addPointAsTranslationChangeform:[self bubbleTranslationPoint]];
     
     [self.ecgView fireDrawingWithPoints:[[PointContainer sharedContainer] translationPointContainer] pointsCount:[[PointContainer sharedContainer] numberOfTranslationElements]];
-    
-    //    printf("当前元素个数:%2d->",[PointContainer sharedContainer].numberOfElements);
-    //    for (int k = 0; k != [PointContainer sharedContainer].numberOfElements; ++k) {
-    //        printf("(%4.0f,%4.0f)",[PointContainer sharedContainer].pointContainer[k].x,[PointContainer sharedContainer].pointContainer[k].y);
-    //    }
-    //    putchar('\n');
-    
 }
 
 #pragma mark -
@@ -92,7 +86,7 @@
 - (CGPoint)bubbleRefreshPoint
 {
     static NSInteger dataSourceCounterIndex = -1;
-    dataSourceCounterIndex ++;
+    dataSourceCounterIndex++;
     dataSourceCounterIndex %= [self.dataSource count];
     
     NSInteger pixelPerPoint = 1;
@@ -103,14 +97,13 @@
     
     xCoordinateInMoniter %= (int)(CGRectGetWidth(self.ecgView.frame));
     
-//        NSLog(@"吐出来的点:%@",NSStringFromCGPoint(targetPointToAdd));
     return targetPointToAdd;
 }
 
 - (CGPoint)bubbleTranslationPoint
 {
     static NSInteger dataSourceCounterIndex = -1;
-    dataSourceCounterIndex ++;
+    dataSourceCounterIndex++;
     dataSourceCounterIndex %= [self.dataSource count];
     
     
@@ -121,7 +114,6 @@
     xCoordinateInMoniter += pixelPerPoint;
     xCoordinateInMoniter %= (int)(CGRectGetWidth(self.ecgView.frame));
     
-//        NSLog(@"吐出来的点:%@",NSStringFromCGPoint(targetPointToAdd));
     return targetPointToAdd;
 }
 

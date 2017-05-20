@@ -187,7 +187,7 @@ static NSInteger kMaxContainerCapacity = 300;
     CGFloat curveLineWidth = 0.8;
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(currentContext, curveLineWidth);
-    CGContextSetStrokeColorWithColor(UIGraphicsGetCurrentContext(), [UIColor greenColor].CGColor);
+    CGContextSetStrokeColorWithColor(UIGraphicsGetCurrentContext(), [UIColor blueColor].CGColor);
     
     CGContextMoveToPoint(currentContext, self.points[0].x, self.points[0].y);
     for (int i = 1; i != self.currentPointsCount; ++ i) {
@@ -205,7 +205,7 @@ static NSInteger kMaxContainerCapacity = 300;
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    [self drawGrid];
+//    [self drawGrid];
     [self drawCurve];
 }
 
